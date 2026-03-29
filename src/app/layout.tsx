@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Providers } from "@/components/Providers";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { VersionBanner } from "@/components/layout/VersionBanner";
@@ -29,16 +30,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-theme="dark"
-      className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
+      suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
-        <VersionBanner />
-        <Navbar />
-        <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-8">
-          {children}
-        </main>
-        <Footer />
+        <Providers>
+          <VersionBanner />
+          <Navbar />
+          <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-8">
+            {children}
+          </main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

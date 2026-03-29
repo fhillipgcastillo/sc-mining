@@ -85,12 +85,12 @@ export interface OreCardStyle {
 }
 
 const CARD_STYLE_MAP: Record<string, OreCardStyle> = {
-  warning:   { ring: 'ring-amber-400/40',  bg: 'bg-amber-400/5',  text: 'text-amber-300' },
-  primary:   { ring: 'ring-blue-400/40',   bg: 'bg-blue-400/5',   text: 'text-blue-300' },
-  default:   { ring: 'ring-white/20',      bg: 'bg-white/5',      text: 'text-white/70' },
-  secondary: { ring: 'ring-violet-400/30', bg: 'bg-violet-400/5', text: 'text-violet-300' },
-  success:   { ring: 'ring-green-400/40',  bg: 'bg-green-400/5',  text: 'text-green-300' },
-  danger:    { ring: 'ring-red-400/40',    bg: 'bg-red-400/5',    text: 'text-red-300' },
+  warning:   { ring: 'ring-amber-400/40',  bg: 'bg-amber-400/5',  text: 'text-amber-600 dark:text-amber-300' },
+  primary:   { ring: 'ring-blue-400/40',   bg: 'bg-blue-400/5',   text: 'text-blue-600 dark:text-blue-300' },
+  default:   { ring: 'ring-ring-default',  bg: 'bg-surface',      text: 'text-muted' },
+  secondary: { ring: 'ring-violet-400/30', bg: 'bg-violet-400/5', text: 'text-violet-600 dark:text-violet-300' },
+  success:   { ring: 'ring-green-400/40',  bg: 'bg-green-400/5',  text: 'text-green-600 dark:text-green-300' },
+  danger:    { ring: 'ring-red-400/40',    bg: 'bg-red-400/5',    text: 'text-red-600 dark:text-red-300' },
 };
 
 /** Returns Tailwind card-style classes for a given ore name. */

@@ -153,7 +153,7 @@ function FindOreTab({
             </SearchField>
 
             {filteredOreTypes.length === 0 ? (
-              <p className="py-12 text-center text-white/40">
+              <p className="py-12 text-center text-muted-deeper">
                 No ore types matching &ldquo;{oreSearch}&rdquo;.
               </p>
             ) : (
@@ -202,7 +202,7 @@ function FindOreTab({
 
             {/* Results table */}
             {filteredLocations.length === 0 ? (
-              <p className="py-12 text-center text-white/40">
+              <p className="py-12 text-center text-muted-deeper">
                 No locations found for {formatOreName(selectedOre)}
                 {debouncedLocationSearch
                   ? ` matching "${debouncedLocationSearch}"`
@@ -230,12 +230,12 @@ function FindOreTab({
                         return (
                           <Table.Row key={loc.location} id={loc.location}>
                             <Table.Cell>
-                              <span className="font-medium text-white">
+                              <span className="font-medium text-heading">
                                 {formatLocationName(loc.location)}
                               </span>
                             </Table.Cell>
                             <Table.Cell>
-                              <span className="font-semibold text-amber-300">
+                              <span className="font-semibold text-accent">
                                 {formatProbability(oreData.prob)}
                               </span>
                             </Table.Cell>
@@ -332,7 +332,7 @@ function BrowseLocationsTab({
             </SearchField>
 
             {filteredGridLocations.length === 0 ? (
-              <p className="py-12 text-center text-white/40">
+              <p className="py-12 text-center text-muted-deeper">
                 No locations matching &ldquo;{locationSearch}&rdquo;.
               </p>
             ) : (
@@ -362,7 +362,7 @@ function BrowseLocationsTab({
               <Button variant="ghost" onPress={handleBack}>
                 &larr; Back to locations
               </Button>
-              <h2 className="text-lg font-semibold text-white">
+              <h2 className="text-lg font-semibold text-heading">
                 {formatLocationName(selectedLocation)}
               </h2>
             </div>
@@ -370,15 +370,15 @@ function BrowseLocationsTab({
             {location && (
               <>
                 {/* Location summary */}
-                <div className="flex gap-4 text-sm text-white/50">
+                <div className="flex gap-4 text-sm text-muted">
                   <span>
-                    <strong className="text-white">
+                    <strong className="text-heading">
                       {formatNumber(location.finds)}
                     </strong>{" "}
                     total finds
                   </span>
                   <span>
-                    <strong className="text-white">
+                    <strong className="text-heading">
                       {formatNumber(location.users)}
                     </strong>{" "}
                     users
@@ -406,7 +406,7 @@ function BrowseLocationsTab({
                               <OreChip name={ore.name} />
                             </Table.Cell>
                             <Table.Cell>
-                              <span className="font-semibold text-amber-300">
+                              <span className="font-semibold text-accent">
                                 {formatProbability(ore.prob)}
                               </span>
                             </Table.Cell>

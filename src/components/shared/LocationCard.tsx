@@ -22,13 +22,13 @@ export function LocationCard({ locationKey, subtitle, onSelect }: LocationCardPr
     >
       <Card
         variant="secondary"
-        className="h-full ring-1 ring-transparent transition-shadow hover:ring-white/20 hover:shadow-lg hover:cursor-pointer"
+        className="h-full ring-1 ring-transparent transition-shadow hover:ring-ring-default hover:shadow-lg hover:cursor-pointer"
       >
         <Card.Content className="px-3 py-3">
-          <p className="text-sm font-medium text-white">
+          <p className="text-sm font-medium text-heading">
             {formatLocationName(locationKey)}
           </p>
-          <p className="mt-1 text-xs text-white/50">{subtitle}</p>
+          <p className="mt-1 text-xs text-muted">{subtitle}</p>
         </Card.Content>
       </Card>
     </motion.button>

@@ -11,10 +11,10 @@ export function VersionBanner() {
     <div
       role="status"
       aria-live="polite"
-      className="flex items-center justify-between gap-3 bg-amber-950/80 px-4 py-2 text-amber-200 backdrop-blur-sm"
+      className="flex items-center justify-between gap-3 bg-banner-bg px-4 py-2 text-banner-text backdrop-blur-sm"
     >
       <p className="min-w-0 flex-1 text-center text-xs leading-snug sm:text-sm">
-        <span className="font-semibold text-amber-300">Notice:</span> This data
+        <span className="font-semibold text-banner-accent">Notice:</span> This data
         is based on Star Citizen versions up to v4.6. The signature system
         changed significantly in v4.7+. Updated data is being collected.
       </p>
@@ -22,7 +22,7 @@ export function VersionBanner() {
         type="button"
         onClick={() => setDismissed(true)}
         aria-label="Dismiss version notice"
-        className="shrink-0 rounded p-1 text-amber-300 transition-colors hover:bg-amber-800/50 hover:text-amber-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-400"
+        className="shrink-0 rounded p-1 text-banner-accent transition-colors hover:bg-banner-dismiss-hover hover:text-banner-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-banner-accent"
       >
         <svg
           aria-hidden="true"

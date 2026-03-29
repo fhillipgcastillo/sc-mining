@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@heroui/react";
+import { ThemeToggle } from "@/components/shared/ThemeToggle";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -18,7 +19,7 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0a12]/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border-subtle bg-overlay-bg backdrop-blur-md">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3"
         aria-label="Main navigation"
@@ -26,7 +27,7 @@ export function Navbar() {
         {/* Brand */}
         <Link
           href="/"
-          className="flex items-center gap-2 text-lg font-bold tracking-tight text-white transition-opacity hover:opacity-80"
+          className="flex items-center gap-2 text-lg font-bold tracking-tight text-heading transition-opacity hover:opacity-80"
         >
           {/* Pickaxe SVG icon */}
           <svg
@@ -59,8 +60,8 @@ export function Navbar() {
                   className={[
                     "rounded-md px-3 py-2 text-sm font-medium transition-colors",
                     isActive
-                      ? "bg-white/10 text-white"
-                      : "text-white/60 hover:bg-white/5 hover:text-white",
+                      ? "bg-surface-hover text-heading"
+                      : "text-muted hover:bg-surface hover:text-heading",
                   ].join(" ")}
                   aria-current={isActive ? "page" : undefined}
                 >
@@ -70,6 +71,11 @@ export function Navbar() {
             );
           })}
         </ul>
+
+        {/* Theme toggle (desktop) */}
+        <div className="hidden md:flex">
+          <ThemeToggle />
+        </div>
 
         {/* Mobile hamburger */}
         <Button
@@ -110,7 +116,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div id="mobile-menu" className="border-t border-white/10 md:hidden">
+        <div id="mobile-menu" className="border-t border-border-subtle md:hidden">
           <ul className="flex flex-col px-4 py-2" role="list">
             {navLinks.map(({ href, label }) => {
               const isActive =
@@ -123,8 +129,8 @@ export function Navbar() {
                     className={[
                       "block rounded-md px-3 py-2.5 text-sm font-medium transition-colors",
                       isActive
-                        ? "bg-white/10 text-white"
-                        : "text-white/60 hover:bg-white/5 hover:text-white",
+                        ? "bg-surface-hover text-heading"
+                        : "text-muted hover:bg-surface hover:text-heading",
                     ].join(" ")}
                     aria-current={isActive ? "page" : undefined}
                   >
@@ -133,6 +139,10 @@ export function Navbar() {
                 </li>
               );
             })}
+            <li className="mt-2 flex items-center gap-2 px-3 py-2">
+              <span className="text-sm text-muted">Theme</span>
+              <ThemeToggle />
+            </li>
           </ul>
         </div>
       )}

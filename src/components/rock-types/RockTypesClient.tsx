@@ -99,7 +99,7 @@ function SystemTabContent({ rows, search, onSearchChange }: SystemTabContentProp
       </SearchField>
 
       {search && filteredRows.length === 0 ? (
-        <p className="py-12 text-center text-white/40">
+        <p className="py-12 text-center text-muted-deeper">
           No rock types matching &ldquo;{search}&rdquo;.
         </p>
       ) : (
@@ -130,7 +130,7 @@ function RockTypeSystemTable({ rows }: { rows: RockTypeSystemRow[] }) {
 
   if (rows.length === 0) {
     return (
-      <p className="py-12 text-center text-white/40">
+      <p className="py-12 text-center text-muted-deeper">
         No rock type data available for this system.
       </p>
     );
@@ -142,7 +142,7 @@ function RockTypeSystemTable({ rows }: { rows: RockTypeSystemRow[] }) {
       <div
         role="row"
         aria-label="Rock type columns"
-        className="grid grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr_1fr_1fr] gap-2 rounded-t-lg bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white/50"
+        className="grid grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr_1fr_1fr] gap-2 rounded-t-lg bg-surface px-4 py-2 text-xs font-semibold uppercase tracking-wider text-muted"
       >
         <span role="columnheader">Rock Type</span>
         <span role="columnheader">Scans</span>
@@ -159,21 +159,21 @@ function RockTypeSystemTable({ rows }: { rows: RockTypeSystemRow[] }) {
         const oreCount = Object.keys(row.ores).length;
 
         return (
-          <div key={row.rockType} className="rounded-lg border border-white/5 bg-white/[0.03]">
+          <div key={row.rockType} className="rounded-lg border border-border-subtle bg-surface-elevated">
             {/* Main data row */}
             <div
               role="row"
               className="grid grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr_1fr_1fr] items-center gap-2 px-4 py-3 text-sm"
             >
-              <span role="rowheader" className="font-medium text-white">
+              <span role="rowheader" className="font-medium text-heading">
                 {formatOreName(row.rockType)}
               </span>
-              <span role="cell" className="text-white/80">{formatNumber(row.scans)}</span>
-              <span role="cell" className="text-white/80">{formatNumber(row.users)}</span>
-              <span role="cell" className="text-white/80">{formatNumber(row.clusters)}</span>
-              <span role="cell" className="text-white/80">{formatNumber(row.mass.med)}</span>
-              <span role="cell" className="text-white/80">{formatNumber(row.inst.med)}</span>
-              <span role="cell" className="text-white/80">{formatNumber(row.res.med)}</span>
+              <span role="cell" className="text-foreground">{formatNumber(row.scans)}</span>
+              <span role="cell" className="text-foreground">{formatNumber(row.users)}</span>
+              <span role="cell" className="text-foreground">{formatNumber(row.clusters)}</span>
+              <span role="cell" className="text-foreground">{formatNumber(row.mass.med)}</span>
+              <span role="cell" className="text-foreground">{formatNumber(row.inst.med)}</span>
+              <span role="cell" className="text-foreground">{formatNumber(row.res.med)}</span>
               <span role="cell">
                 <button
                   type="button"
@@ -181,7 +181,7 @@ function RockTypeSystemTable({ rows }: { rows: RockTypeSystemRow[] }) {
                   aria-expanded={isExpanded}
                   aria-controls={`ore-subtable-${row.rockType}`}
                   aria-label={`${isExpanded ? "Collapse" : "Expand"} ore composition for ${formatOreName(row.rockType)}`}
-                  className="flex items-center gap-1.5 rounded px-2 py-1 text-xs font-medium text-white/70 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+                  className="flex items-center gap-1.5 rounded px-2 py-1 text-xs font-medium text-muted transition-colors hover:bg-surface-hover hover:text-heading focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-border-subtle"
                 >
                   <span>
                     {oreCount} ore{oreCount !== 1 ? "s" : ""}
@@ -249,8 +249,8 @@ function OreSubTable({ ores, rockType }: OreSubTableProps) {
   );
 
   return (
-    <div className="border-t border-white/10 bg-white/5 px-4 py-3">
-      <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-white/40">
+    <div className="border-t border-border-subtle bg-surface px-4 py-3">
+      <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted-deeper">
         Ore Composition — {formatOreName(rockType)}
       </p>
       <div className="overflow-x-auto rounded-lg">
@@ -273,7 +273,7 @@ function OreSubTable({ ores, rockType }: OreSubTableProps) {
                     <OreChip name={ore.name} />
                   </Table.Cell>
                   <Table.Cell>
-                    <span className="font-semibold text-amber-300">
+                    <span className="font-semibold text-accent">
                       {formatProbability(ore.prob)}
                     </span>
                   </Table.Cell>
