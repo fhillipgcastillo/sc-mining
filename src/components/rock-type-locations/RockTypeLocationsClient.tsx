@@ -18,6 +18,8 @@ import { OreChip } from "@/components/shared/OreChip";
 import { SortableHeader } from "@/components/shared/SortableHeader";
 import { ItemCard } from "@/components/shared/ItemCard";
 import { LocationCard } from "@/components/shared/LocationCard";
+import { ViewModeToggle } from "@/components/shared/ViewModeToggle";
+import { RockTypeLocationsPivotAdapter } from "./RockTypeLocationsPivotAdapter";
 
 interface RockTypeLocationsClientProps {
   allLocations: RockTypeLocationRow[];
@@ -34,43 +36,74 @@ export function RockTypeLocationsClient({
   allRockTypes,
 }: RockTypeLocationsClientProps) {
   const [activeTab, setActiveTab] = useState<string>("find-rock-type");
+  const [viewMode, setViewMode] = useState<"cards" | "matrix">("cards");
 
   return (
-    <Tabs
-      selectedKey={activeTab}
-      onSelectionChange={(key) => setActiveTab(String(key))}
-      className="mt-6"
-    >
-      <Tabs.ListContainer>
-        <Tabs.List aria-label="Rock type locations view mode">
-          <Tabs.Tab id="find-rock-type">Find Rock Type<Tabs.Indicator /></Tabs.Tab>
-          <Tabs.Tab id="browse-locations">Browse Locations<Tabs.Indicator /></Tabs.Tab>
-        </Tabs.List>
-      </Tabs.ListContainer>
+    <div>
+      <div className="mt-6 mb-4 flex justify-end">
+        <ViewModeToggle mode={viewMode} onChange={setViewMode} />
+      </div>
 
-      <Tabs.Panel id="find-rock-type">
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.2 }}
-        >
-          <FindRockTypeTab
-            allLocations={allLocations}
-            allRockTypes={allRockTypes}
-          />
-        </motion.div>
-      </Tabs.Panel>
+      <AnimatePresence mode="wait">
+        {viewMode === "cards" ? (
+          <motion.div
+            key="cards-view"
+            initial={initialAnim}
+            animate={enterAnim}
+            exit={exitAnim}
+            transition={transitionIn}
+          >
+            <Tabs
+              selectedKey={activeTab}
+              onSelectionChange={(key) => setActiveTab(String(key))}
+            >
+              <Tabs.ListContainer>
+                <Tabs.List aria-label="Rock type locations view mode">
+                  <Tabs.Tab id="find-rock-type">Find Rock Type<Tabs.Indicator /></Tabs.Tab>
+                  <Tabs.Tab id="browse-locations">Browse Locations<Tabs.Indicator /></Tabs.Tab>
+                </Tabs.List>
+              </Tabs.ListContainer>
 
-      <Tabs.Panel id="browse-locations">
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.2 }}
-        >
-          <BrowseLocationsTab allLocations={allLocations} />
-        </motion.div>
-      </Tabs.Panel>
-    </Tabs>
+              <Tabs.Panel id="find-rock-type">
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <FindRockTypeTab
+                    allLocations={allLocations}
+                    allRockTypes={allRockTypes}
+                  />
+                </motion.div>
+              </Tabs.Panel>
+
+              <Tabs.Panel id="browse-locations">
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <BrowseLocationsTab allLocations={allLocations} />
+                </motion.div>
+              </Tabs.Panel>
+            </Tabs>
+          </motion.div>
+        ) : (
+          <motion.div
+            key="matrix-view"
+            initial={initialAnim}
+            animate={enterAnim}
+            exit={exitAnim}
+            transition={transitionIn}
+          >
+            <RockTypeLocationsPivotAdapter
+              allLocations={allLocations}
+              allRockTypes={allRockTypes}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }
 
