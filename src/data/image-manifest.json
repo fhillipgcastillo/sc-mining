@@ -1,0 +1,304 @@
+{
+  "ores": {
+    "AGRICIUM": {
+      "full": "/images/ores/agricium.webp",
+      "thumb": "/images/ores/agricium-thumb.webp"
+    },
+    "ALUMINUM": {
+      "full": "/images/ores/aluminum.webp",
+      "thumb": "/images/ores/aluminum-thumb.webp"
+    },
+    "APHORITE": {
+      "full": "/images/ores/aphorite.webp",
+      "thumb": "/images/ores/aphorite-thumb.webp"
+    },
+    "BERADOM": {
+      "full": "/images/ores/beradom.webp",
+      "thumb": "/images/ores/beradom-thumb.webp"
+    },
+    "BERYL": {
+      "full": "/images/ores/beryl.webp",
+      "thumb": "/images/ores/beryl-thumb.webp"
+    },
+    "BEXALITE": {
+      "full": "/images/ores/bexalite.webp",
+      "thumb": "/images/ores/bexalite-thumb.webp"
+    },
+    "BORASE": {
+      "full": "/images/ores/borase.webp",
+      "thumb": "/images/ores/borase-thumb.webp"
+    },
+    "COPPER": {
+      "full": "/images/ores/copper.webp",
+      "thumb": "/images/ores/copper-thumb.webp"
+    },
+    "CORUNDUM": {
+      "full": "/images/ores/corundum.webp",
+      "thumb": "/images/ores/corundum-thumb.webp"
+    },
+    "DOLIVINE": {
+      "full": "/images/ores/dolivine.webp",
+      "thumb": "/images/ores/dolivine-thumb.webp"
+    },
+    "FEYNMALINE": {
+      "full": "/images/ores/feynmaline.webp",
+      "thumb": "/images/ores/feynmaline-thumb.webp"
+    },
+    "GLACOSITE": {
+      "full": "/images/ores/glacosite.webp",
+      "thumb": "/images/ores/glacosite-thumb.webp"
+    },
+    "GOLD": {
+      "full": "/images/ores/gold.webp",
+      "thumb": "/images/ores/gold-thumb.webp"
+    },
+    "HADANITE": {
+      "full": "/images/ores/hadanite.webp",
+      "thumb": "/images/ores/hadanite-thumb.webp"
+    },
+    "HEPHAESTANITE": {
+      "full": "/images/ores/hephaestanite.webp",
+      "thumb": "/images/ores/hephaestanite-thumb.webp"
+    },
+    "ICE": {
+      "full": "/images/ores/ice.webp",
+      "thumb": "/images/ores/ice-thumb.webp"
+    },
+    "INERTMATERIAL": {
+      "full": "/images/ores/inertmaterial.webp",
+      "thumb": "/images/ores/inertmaterial-thumb.webp"
+    },
+    "IRON": {
+      "full": "/images/ores/iron.webp",
+      "thumb": "/images/ores/iron-thumb.webp"
+    },
+    "JANALITE": {
+      "full": "/images/ores/janalite.webp",
+      "thumb": "/images/ores/janalite-thumb.webp"
+    },
+    "LARANITE": {
+      "full": "/images/ores/laranite.webp",
+      "thumb": "/images/ores/laranite-thumb.webp"
+    },
+    "LINDINIUM": {
+      "full": "/images/ores/lindinium.webp",
+      "thumb": "/images/ores/lindinium-thumb.webp"
+    },
+    "QUANTANIUM": {
+      "full": "/images/ores/quantanium.webp",
+      "thumb": "/images/ores/quantanium-thumb.webp"
+    },
+    "QUARTZ": {
+      "full": "/images/ores/quartz.webp",
+      "thumb": "/images/ores/quartz-thumb.webp"
+    },
+    "RICCITE": {
+      "full": "/images/ores/riccite.webp",
+      "thumb": "/images/ores/riccite-thumb.webp"
+    },
+    "SAVRILIUM": {
+      "full": "/images/ores/savrilium.webp",
+      "thumb": "/images/ores/savrilium-thumb.webp"
+    },
+    "SILICON": {
+      "full": "/images/ores/silicon.webp",
+      "thumb": "/images/ores/silicon-thumb.webp"
+    },
+    "STILERON": {
+      "full": "/images/ores/stileron.webp",
+      "thumb": "/images/ores/stileron-thumb.webp"
+    },
+    "TARANITE": {
+      "full": "/images/ores/taranite.webp",
+      "thumb": "/images/ores/taranite-thumb.webp"
+    },
+    "TIN": {
+      "full": "/images/ores/tin.webp",
+      "thumb": "/images/ores/tin-thumb.webp"
+    },
+    "TITANIUM": {
+      "full": "/images/ores/titanium.webp",
+      "thumb": "/images/ores/titanium-thumb.webp"
+    },
+    "TORITE": {
+      "full": "/images/ores/torite.webp",
+      "thumb": "/images/ores/torite-thumb.webp"
+    },
+    "TUNGSTEN": {
+      "full": "/images/ores/tungsten.webp",
+      "thumb": "/images/ores/tungsten-thumb.webp"
+    }
+  },
+  "locations": {
+    "AARON_HALO": {
+      "full": "/images/locations/aaron_halo.webp",
+      "thumb": "/images/locations/aaron_halo-thumb.webp"
+    },
+    "ABE": {
+      "full": "/images/locations/abe.webp",
+      "thumb": "/images/locations/abe-thumb.webp"
+    },
+    "ARC": {
+      "full": "/images/locations/arc.webp",
+      "thumb": "/images/locations/arc-thumb.webp"
+    },
+    "ARI": {
+      "full": "/images/locations/ari.webp",
+      "thumb": "/images/locations/ari-thumb.webp"
+    },
+    "BLO": {
+      "full": "/images/locations/blo.webp",
+      "thumb": "/images/locations/blo-thumb.webp"
+    },
+    "CAL": {
+      "full": "/images/locations/cal.webp",
+      "thumb": "/images/locations/cal-thumb.webp"
+    },
+    "CEL": {
+      "full": "/images/locations/cel.webp",
+      "thumb": "/images/locations/cel-thumb.webp"
+    },
+    "CLI": {
+      "full": "/images/locations/cli.webp",
+      "thumb": "/images/locations/cli-thumb.webp"
+    },
+    "CRU": {
+      "full": "/images/locations/cru.webp",
+      "thumb": "/images/locations/cru-thumb.webp"
+    },
+    "DAY": {
+      "full": "/images/locations/day.webp",
+      "thumb": "/images/locations/day-thumb.webp"
+    },
+    "EUT": {
+      "full": "/images/locations/eut.webp",
+      "thumb": "/images/locations/eut-thumb.webp"
+    },
+    "FAI": {
+      "full": "/images/locations/fai.webp",
+      "thumb": "/images/locations/fai-thumb.webp"
+    },
+    "HUR": {
+      "full": "/images/locations/hur.webp",
+      "thumb": "/images/locations/hur-thumb.webp"
+    },
+    "IGN": {
+      "full": "/images/locations/ign.webp",
+      "thumb": "/images/locations/ign-thumb.webp"
+    },
+    "ITA": {
+      "full": "/images/locations/ita.webp",
+      "thumb": "/images/locations/ita-thumb.webp"
+    },
+    "LYR": {
+      "full": "/images/locations/lyr.webp",
+      "thumb": "/images/locations/lyr-thumb.webp"
+    },
+    "MAG": {
+      "full": "/images/locations/mag.webp",
+      "thumb": "/images/locations/mag-thumb.webp"
+    },
+    "MIC": {
+      "full": "/images/locations/mic.webp",
+      "thumb": "/images/locations/mic-thumb.webp"
+    },
+    "MON": {
+      "full": "/images/locations/mon.webp",
+      "thumb": "/images/locations/mon-thumb.webp"
+    },
+    "PY1": {
+      "full": "/images/locations/py1.webp",
+      "thumb": "/images/locations/py1-thumb.webp"
+    },
+    "PY4": {
+      "full": "/images/locations/py4.webp",
+      "thumb": "/images/locations/py4-thumb.webp"
+    },
+    "TER": {
+      "full": "/images/locations/ter.webp",
+      "thumb": "/images/locations/ter-thumb.webp"
+    },
+    "WAL": {
+      "full": "/images/locations/wal.webp",
+      "thumb": "/images/locations/wal-thumb.webp"
+    },
+    "YEL": {
+      "full": "/images/locations/yel.webp",
+      "thumb": "/images/locations/yel-thumb.webp"
+    }
+  },
+  "rockTypes": {
+    "ATACAMITE": {
+      "full": "/images/rock-types/atacamite.webp",
+      "thumb": "/images/rock-types/atacamite-thumb.webp"
+    },
+    "ATACAMITE DEPOSIT": {
+      "full": "/images/rock-types/atacamite_deposit.webp",
+      "thumb": "/images/rock-types/atacamite_deposit-thumb.webp"
+    },
+    "CTYPE": {
+      "full": "/images/rock-types/ctype.webp",
+      "thumb": "/images/rock-types/ctype-thumb.webp"
+    },
+    "ETYPE": {
+      "full": "/images/rock-types/etype.webp",
+      "thumb": "/images/rock-types/etype-thumb.webp"
+    },
+    "FELSIC": {
+      "full": "/images/rock-types/felsic.webp",
+      "thumb": "/images/rock-types/felsic-thumb.webp"
+    },
+    "FELSIC DEPOSIT": {
+      "full": "/images/rock-types/felsic_deposit.webp",
+      "thumb": "/images/rock-types/felsic_deposit-thumb.webp"
+    },
+    "GNEISS": {
+      "full": "/images/rock-types/gneiss.webp",
+      "thumb": "/images/rock-types/gneiss-thumb.webp"
+    },
+    "GRANITE": {
+      "full": "/images/rock-types/granite.webp",
+      "thumb": "/images/rock-types/granite-thumb.webp"
+    },
+    "IGNEOUS": {
+      "full": "/images/rock-types/igneous.webp",
+      "thumb": "/images/rock-types/igneous-thumb.webp"
+    },
+    "ITYPE": {
+      "full": "/images/rock-types/itype.webp",
+      "thumb": "/images/rock-types/itype-thumb.webp"
+    },
+    "MTYPE": {
+      "full": "/images/rock-types/mtype.webp",
+      "thumb": "/images/rock-types/mtype-thumb.webp"
+    },
+    "OBSIDIAN": {
+      "full": "/images/rock-types/obsidian.webp",
+      "thumb": "/images/rock-types/obsidian-thumb.webp"
+    },
+    "PTYPE": {
+      "full": "/images/rock-types/ptype.webp",
+      "thumb": "/images/rock-types/ptype-thumb.webp"
+    },
+    "QTYPE": {
+      "full": "/images/rock-types/qtype.webp",
+      "thumb": "/images/rock-types/qtype-thumb.webp"
+    },
+    "QUARTZITE": {
+      "full": "/images/rock-types/quartzite.webp",
+      "thumb": "/images/rock-types/quartzite-thumb.webp"
+    },
+    "QUARTZITE DEPOSIT": {
+      "full": "/images/rock-types/quartzite_deposit.webp",
+      "thumb": "/images/rock-types/quartzite_deposit-thumb.webp"
+    },
+    "SHALE": {
+      "full": "/images/rock-types/shale.webp",
+      "thumb": "/images/rock-types/shale-thumb.webp"
+    },
+    "STYPE": {
+      "full": "/images/rock-types/stype.webp",
+      "thumb": "/images/rock-types/stype-thumb.webp"
+    }
+  }
+}

@@ -2,6 +2,8 @@
 
 import { Card, Chip } from "@heroui/react";
 import type { ChipVariants } from "@heroui/react";
+import Image from "next/image";
+import { getLocationImagePath } from "@/lib/images";
 import { motion } from "framer-motion";
 import { formatLocationName, LOCATION_TYPE_COLORS, LOCATION_TYPE_LABELS } from "@/lib/constants";
 import type { LocationMeta } from "@/types";
@@ -26,6 +28,7 @@ export function LocationCard({ locationKey, subtitle, onSelect, meta }: Location
   const typeColor: ChipVariants["color"] = meta
     ? (COLOR_MAP[LOCATION_TYPE_COLORS[meta.type]] ?? "default")
     : "default";
+    const imagePath = getLocationImagePath(locationKey);
 
   return (
     <motion.button
@@ -40,6 +43,17 @@ export function LocationCard({ locationKey, subtitle, onSelect, meta }: Location
         variant="secondary"
         className="h-full ring-1 ring-transparent transition-shadow hover:ring-ring-default hover:shadow-lg hover:cursor-pointer"
       >
+        {imagePath && (
+          <div className="relative aspect-[3/1] overflow-hidden rounded-t-lg">
+            <Image
+              src={imagePath}
+              alt={formatLocationName(locationKey)}
+              fill
+              sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 20vw"
+              className="object-cover"
+            />
+          </div>
+        )}
         <Card.Content className="px-3 py-3">
           <div className="flex items-start justify-between gap-1">
             <p className="text-sm font-medium text-heading truncate">

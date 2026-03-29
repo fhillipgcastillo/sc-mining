@@ -212,6 +212,7 @@ function FindRockTypeTab({
                   <ItemCard
                     key={rt}
                     name={rt}
+                    category="rockTypes"
                     onSelect={setSelectedRockType}
                   />
                 ))}
