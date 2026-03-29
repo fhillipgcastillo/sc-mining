@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Table, Tabs } from "@heroui/react";
+import { Table, Tabs, SearchField, Label } from "@heroui/react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { RockTypeSystemRow, OreEntry } from "@/types";
 import { formatOreName } from "@/lib/constants";
@@ -20,11 +20,17 @@ function formatSystemName(system: string): string {
 
 export function RockTypesClient({ systems, systemData }: RockTypesClientProps) {
   const [activeTab, setActiveTab] = useState<string>(systems[0] ?? "");
+  const [search, setSearch] = useState("");
+
+  function handleTabChange(key: string) {
+    setActiveTab(key);
+    setSearch("");
+  }
 
   return (
     <Tabs
       selectedKey={activeTab}
-      onSelectionChange={(key) => setActiveTab(String(key))}
+      onSelectionChange={(key) => handleTabChange(String(key))}
       className="mt-6"
     >
       <Tabs.ListContainer>
@@ -45,11 +51,61 @@ export function RockTypesClient({ systems, systemData }: RockTypesClientProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <RockTypeSystemTable rows={systemData[system] ?? []} />
+            <SystemTabContent
+              rows={systemData[system] ?? []}
+              search={search}
+              onSearchChange={setSearch}
+            />
           </motion.div>
         </Tabs.Panel>
       ))}
     </Tabs>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Per-system tab content: search field + filtered table
+// ---------------------------------------------------------------------------
+
+interface SystemTabContentProps {
+  rows: RockTypeSystemRow[];
+  search: string;
+  onSearchChange: (value: string) => void;
+}
+
+function SystemTabContent({ rows, search, onSearchChange }: SystemTabContentProps) {
+  const filteredRows = useMemo(() => {
+    if (!search) return rows;
+    const query = search.toLowerCase();
+    return rows.filter((row) =>
+      formatOreName(row.rockType).toLowerCase().includes(query)
+    );
+  }, [rows, search]);
+
+  return (
+    <>
+      <SearchField
+        aria-label="Search rock types"
+        value={search}
+        onChange={onSearchChange}
+        className="mt-4 sm:w-72"
+      >
+        <Label>Search Rock Types</Label>
+        <SearchField.Group>
+          <SearchField.SearchIcon />
+          <SearchField.Input placeholder="Filter rock types..." />
+          <SearchField.ClearButton />
+        </SearchField.Group>
+      </SearchField>
+
+      {search && filteredRows.length === 0 ? (
+        <p className="py-12 text-center text-white/40">
+          No rock types matching &ldquo;{search}&rdquo;.
+        </p>
+      ) : (
+        <RockTypeSystemTable rows={filteredRows} />
+      )}
+    </>
   );
 }
 
