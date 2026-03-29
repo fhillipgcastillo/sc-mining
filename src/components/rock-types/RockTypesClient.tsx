@@ -6,7 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { RockTypeSystemRow, OreEntry } from "@/types";
 import { formatOreName } from "@/lib/constants";
 import { formatNumber, formatProbability, formatPercent } from "@/lib/formatting";
+import { useSort } from "@/hooks/useSort";
 import { OreChip } from "@/components/shared/OreChip";
+import { SortableHeader } from "@/components/shared/SortableHeader";
 
 interface RockTypesClientProps {
   systems: string[];
@@ -116,6 +118,19 @@ function SystemTabContent({ rows, search, onSearchChange }: SystemTabContentProp
 function RockTypeSystemTable({ rows }: { rows: RockTypeSystemRow[] }) {
   const [expandedRows, setExpandedRows] = useState<Set<string>>(new Set());
 
+  const { sortedData, sortDescriptor, onSortChange } = useSort({
+    data: rows,
+    columns: {
+      rockType: (row) => formatOreName(row.rockType),
+      scans: "scans" as const,
+      users: "users" as const,
+      clusters: "clusters" as const,
+      massMed: (row) => row.mass.med,
+      instMed: (row) => row.inst.med,
+      resMed: (row) => row.res.med,
+    },
+  });
+
   function toggleRow(rockType: string) {
     setExpandedRows((prev) => {
       const next = new Set(prev);
@@ -144,17 +159,17 @@ function RockTypeSystemTable({ rows }: { rows: RockTypeSystemRow[] }) {
         aria-label="Rock type columns"
         className="grid grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr_1fr_1fr] gap-2 rounded-t-lg bg-surface px-4 py-2 text-xs font-semibold uppercase tracking-wider text-muted"
       >
-        <span role="columnheader">Rock Type</span>
-        <span role="columnheader">Scans</span>
-        <span role="columnheader">Users</span>
-        <span role="columnheader">Clusters</span>
-        <span role="columnheader">Mass (med)</span>
-        <span role="columnheader">Instability (med)</span>
-        <span role="columnheader">Resistance (med)</span>
+        <span role="columnheader"><SortableHeader columnId="rockType" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Rock Type</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="scans" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Scans</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="users" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Users</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="clusters" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Clusters</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="massMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Mass (med)</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="instMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Instability (med)</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="resMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Resistance (med)</SortableHeader></span>
         <span role="columnheader">Ores</span>
       </div>
 
-      {rows.map((row) => {
+      {sortedData.map((row) => {
         const isExpanded = expandedRows.has(row.rockType);
         const oreCount = Object.keys(row.ores).length;
 
@@ -240,13 +255,28 @@ interface OreSubTableProps {
 }
 
 function OreSubTable({ ores, rockType }: OreSubTableProps) {
-  const sortedOres = useMemo(
+  const oreRows = useMemo(
     () =>
-      Object.entries(ores)
-        .map(([name, entry]) => ({ name, ...entry }))
-        .sort((a, b) => b.prob - a.prob),
+      Object.entries(ores).map(([name, entry]) => ({ name, ...entry })),
     [ores]
   );
+
+  const oreSortColumns = useMemo(
+    () => ({
+      name: "name" as const,
+      prob: "prob" as const,
+      minPct: "minPct" as const,
+      medPct: "medPct" as const,
+      maxPct: "maxPct" as const,
+    }),
+    []
+  );
+
+  const { sortedData: sortedOres, sortDescriptor, onSortChange } = useSort({
+    data: oreRows,
+    columns: oreSortColumns,
+    defaultSort: { column: "prob", direction: "descending" },
+  });
 
   return (
     <div className="border-t border-border-subtle bg-surface px-4 py-3">
@@ -260,11 +290,21 @@ function OreSubTable({ ores, rockType }: OreSubTableProps) {
         >
           <Table.Content>
             <Table.Header>
-              <Table.Column isRowHeader>Ore</Table.Column>
-              <Table.Column>Probability</Table.Column>
-              <Table.Column>Min %</Table.Column>
-              <Table.Column>Median %</Table.Column>
-              <Table.Column>Max %</Table.Column>
+              <Table.Column isRowHeader>
+                <SortableHeader columnId="name" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Ore</SortableHeader>
+              </Table.Column>
+              <Table.Column>
+                <SortableHeader columnId="prob" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Probability</SortableHeader>
+              </Table.Column>
+              <Table.Column>
+                <SortableHeader columnId="minPct" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Min %</SortableHeader>
+              </Table.Column>
+              <Table.Column>
+                <SortableHeader columnId="medPct" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Median %</SortableHeader>
+              </Table.Column>
+              <Table.Column>
+                <SortableHeader columnId="maxPct" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Max %</SortableHeader>
+              </Table.Column>
             </Table.Header>
             <Table.Body items={sortedOres}>
               {(ore) => (
