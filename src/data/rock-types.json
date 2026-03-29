@@ -1,0 +1,3777 @@
+{
+  "STANTON": {
+    "CTYPE": {
+      "users": 128,
+      "scans": 1129,
+      "clusters": 857,
+      "clusterCount": {
+        "min": 1,
+        "max": 12,
+        "med": 1
+      },
+      "mass": {
+        "min": 0,
+        "max": 73716,
+        "med": 5035
+      },
+      "inst": {
+        "min": 0,
+        "max": 1226,
+        "med": 27.49
+      },
+      "res": {
+        "min": 0,
+        "max": 496,
+        "med": 0.07
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 0.98,
+          "medPct": 0.13349999999999995
+        },
+        "HEPHAESTANITE": {
+          "prob": 0.43,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.41
+        },
+        "BEXALITE": {
+          "prob": 0.2,
+          "minPct": 0.02,
+          "maxPct": 0.69,
+          "medPct": 0.2934
+        },
+        "TUNGSTEN": {
+          "prob": 0.2,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.51
+        },
+        "TARANITE": {
+          "prob": 0.18,
+          "minPct": 0.03,
+          "maxPct": 0.5,
+          "medPct": 0.3
+        },
+        "TITANIUM": {
+          "prob": 0.17,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5043
+        },
+        "CORUNDUM": {
+          "prob": 0.15,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.49
+        },
+        "ALUMINUM": {
+          "prob": 0.14,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5
+        },
+        "COPPER": {
+          "prob": 0.13,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.5
+        },
+        "QUARTZ": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.5
+        },
+        "IRON": {
+          "prob": 0.1,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5196
+        },
+        "GOLD": {
+          "prob": 0.08,
+          "minPct": 0.21,
+          "maxPct": 0.5,
+          "medPct": 0.3347
+        },
+        "QUANTANIUM": {
+          "prob": 0.03,
+          "minPct": 0.2,
+          "maxPct": 0.48,
+          "medPct": 0.3
+        }
+      }
+    },
+    "ETYPE": {
+      "users": 141,
+      "scans": 1618,
+      "clusters": 1249,
+      "clusterCount": {
+        "min": 1,
+        "max": 5,
+        "med": 1
+      },
+      "mass": {
+        "min": 4,
+        "max": 92856,
+        "med": 6725
+      },
+      "inst": {
+        "min": 0,
+        "max": 773,
+        "med": 34.12
+      },
+      "res": {
+        "min": 0,
+        "max": 0.83,
+        "med": 0.22
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.14989999999999992
+        },
+        "BERYL": {
+          "prob": 0.39,
+          "minPct": 0,
+          "maxPct": 0.79,
+          "medPct": 0.41
+        },
+        "GOLD": {
+          "prob": 0.3,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.3121
+        },
+        "TUNGSTEN": {
+          "prob": 0.21,
+          "minPct": 0.13,
+          "maxPct": 0.7,
+          "medPct": 0.4793
+        },
+        "ALUMINUM": {
+          "prob": 0.19,
+          "minPct": 0.3,
+          "maxPct": 0.89,
+          "medPct": 0.47
+        },
+        "CORUNDUM": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.4855
+        },
+        "QUARTZ": {
+          "prob": 0.13,
+          "minPct": 0.25,
+          "maxPct": 0.95,
+          "medPct": 0.49689999999999995
+        },
+        "TITANIUM": {
+          "prob": 0.13,
+          "minPct": 0,
+          "maxPct": 0.86,
+          "medPct": 0.49
+        },
+        "BEXALITE": {
+          "prob": 0.12,
+          "minPct": 0,
+          "maxPct": 0.58,
+          "medPct": 0.3145
+        },
+        "COPPER": {
+          "prob": 0.12,
+          "minPct": 0,
+          "maxPct": 0.75,
+          "medPct": 0.5
+        },
+        "IRON": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 0.85,
+          "medPct": 0.5141
+        },
+        "TARANITE": {
+          "prob": 0.11,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.31
+        },
+        "QUANTANIUM": {
+          "prob": 0.05,
+          "minPct": 0.2,
+          "maxPct": 0.55,
+          "medPct": 0.32
+        }
+      }
+    },
+    "ITYPE": null,
+    "MTYPE": {
+      "users": 132,
+      "scans": 1513,
+      "clusters": 1178,
+      "clusterCount": {
+        "min": 1,
+        "max": 5,
+        "med": 1
+      },
+      "mass": {
+        "min": 0,
+        "max": 76500,
+        "med": 10078
+      },
+      "inst": {
+        "min": 0,
+        "max": 589,
+        "med": 44.88
+      },
+      "res": {
+        "min": 0,
+        "max": 0.68,
+        "med": 0.2
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 0.99,
+          "medPct": 0.14
+        },
+        "AGRICIUM": {
+          "prob": 0.56,
+          "minPct": 0.2,
+          "maxPct": 0.94,
+          "medPct": 0.40549999999999997
+        },
+        "GOLD": {
+          "prob": 0.26,
+          "minPct": 0.02,
+          "maxPct": 0.5,
+          "medPct": 0.3
+        },
+        "CORUNDUM": {
+          "prob": 0.2,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.51
+        },
+        "ALUMINUM": {
+          "prob": 0.17,
+          "minPct": 0.08,
+          "maxPct": 0.89,
+          "medPct": 0.5004
+        },
+        "IRON": {
+          "prob": 0.15,
+          "minPct": 0.01,
+          "maxPct": 0.7,
+          "medPct": 0.48
+        },
+        "TITANIUM": {
+          "prob": 0.14,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5005
+        },
+        "COPPER": {
+          "prob": 0.12,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.51
+        },
+        "QUARTZ": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5275
+        },
+        "TUNGSTEN": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.48
+        },
+        "TARANITE": {
+          "prob": 0.04,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.29
+        },
+        "BEXALITE": {
+          "prob": 0.03,
+          "minPct": 0.21,
+          "maxPct": 0.49,
+          "medPct": 0.2598
+        },
+        "QUANTANIUM": {
+          "prob": 0.02,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.2828
+        }
+      }
+    },
+    "PTYPE": {
+      "users": 124,
+      "scans": 1170,
+      "clusters": 955,
+      "clusterCount": {
+        "min": 1,
+        "max": 5,
+        "med": 1
+      },
+      "mass": {
+        "min": 0,
+        "max": 78943,
+        "med": 8959
+      },
+      "inst": {
+        "min": 0,
+        "max": 25223,
+        "med": 40.78
+      },
+      "res": {
+        "min": 0,
+        "max": 0.57,
+        "med": 0.2
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.03,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.13
+        },
+        "LARANITE": {
+          "prob": 0.48,
+          "minPct": 0.15,
+          "maxPct": 0.6,
+          "medPct": 0.41
+        },
+        "TARANITE": {
+          "prob": 0.22,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.3023
+        },
+        "ALUMINUM": {
+          "prob": 0.19,
+          "minPct": 0.3,
+          "maxPct": 0.96,
+          "medPct": 0.5032
+        },
+        "BEXALITE": {
+          "prob": 0.19,
+          "minPct": 0.04,
+          "maxPct": 0.5,
+          "medPct": 0.2838
+        },
+        "CORUNDUM": {
+          "prob": 0.18,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5
+        },
+        "COPPER": {
+          "prob": 0.16,
+          "minPct": 0,
+          "maxPct": 0.8,
+          "medPct": 0.5
+        },
+        "TUNGSTEN": {
+          "prob": 0.14,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5243
+        },
+        "IRON": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5082
+        },
+        "TITANIUM": {
+          "prob": 0.13,
+          "minPct": 0.1,
+          "maxPct": 0.7,
+          "medPct": 0.4736
+        },
+        "QUARTZ": {
+          "prob": 0.09,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.49
+        },
+        "GOLD": {
+          "prob": 0.06,
+          "minPct": 0.09,
+          "maxPct": 0.49,
+          "medPct": 0.2934
+        },
+        "QUANTANIUM": {
+          "prob": 0.02,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.2888
+        }
+      }
+    },
+    "QTYPE": {
+      "users": 134,
+      "scans": 1270,
+      "clusters": 987,
+      "clusterCount": {
+        "min": 1,
+        "max": 5,
+        "med": 1
+      },
+      "mass": {
+        "min": 0,
+        "max": 88729,
+        "med": 10586
+      },
+      "inst": {
+        "min": 0,
+        "max": 3843,
+        "med": 31.17
+      },
+      "res": {
+        "min": 0,
+        "max": 696,
+        "med": 0.17
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.03,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.1382000000000001
+        },
+        "BORASE": {
+          "prob": 0.27,
+          "minPct": 0.04,
+          "maxPct": 0.6,
+          "medPct": 0.4
+        },
+        "LARANITE": {
+          "prob": 0.27,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.39149999999999996
+        },
+        "CORUNDUM": {
+          "prob": 0.16,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.49
+        },
+        "QUARTZ": {
+          "prob": 0.16,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.51
+        },
+        "ALUMINUM": {
+          "prob": 0.15,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.4924
+        },
+        "COPPER": {
+          "prob": 0.15,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.5259
+        },
+        "TITANIUM": {
+          "prob": 0.15,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.48
+        },
+        "TUNGSTEN": {
+          "prob": 0.15,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.52
+        },
+        "GOLD": {
+          "prob": 0.13,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.2981
+        },
+        "BEXALITE": {
+          "prob": 0.12,
+          "minPct": 0.01,
+          "maxPct": 0.5,
+          "medPct": 0.3089
+        },
+        "IRON": {
+          "prob": 0.11,
+          "minPct": 0.09,
+          "maxPct": 1,
+          "medPct": 0.498
+        },
+        "TARANITE": {
+          "prob": 0.1,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.3
+        },
+        "QUANTANIUM": {
+          "prob": 0.04,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.3
+        }
+      }
+    },
+    "STYPE": {
+      "users": 118,
+      "scans": 1127,
+      "clusters": 907,
+      "clusterCount": {
+        "min": 1,
+        "max": 5,
+        "med": 1
+      },
+      "mass": {
+        "min": 0,
+        "max": 66275,
+        "med": 5116
+      },
+      "inst": {
+        "min": 0,
+        "max": 352.2,
+        "med": 27.93
+      },
+      "res": {
+        "min": 0,
+        "max": 0.78,
+        "med": 0.23
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.11440000000000006
+        },
+        "BERYL": {
+          "prob": 0.39,
+          "minPct": 0.02,
+          "maxPct": 0.6,
+          "medPct": 0.41
+        },
+        "LARANITE": {
+          "prob": 0.23,
+          "minPct": 0.01,
+          "maxPct": 0.6,
+          "medPct": 0.3973
+        },
+        "ALUMINUM": {
+          "prob": 0.21,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5031
+        },
+        "IRON": {
+          "prob": 0.18,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.4982
+        },
+        "TITANIUM": {
+          "prob": 0.16,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.5085999999999999
+        },
+        "TARANITE": {
+          "prob": 0.15,
+          "minPct": 0.03,
+          "maxPct": 0.49,
+          "medPct": 0.29469999999999996
+        },
+        "TUNGSTEN": {
+          "prob": 0.15,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.49
+        },
+        "BEXALITE": {
+          "prob": 0.13,
+          "minPct": 0.06,
+          "maxPct": 0.49,
+          "medPct": 0.29
+        },
+        "QUARTZ": {
+          "prob": 0.13,
+          "minPct": 0.03,
+          "maxPct": 0.95,
+          "medPct": 0.51
+        },
+        "COPPER": {
+          "prob": 0.09,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.4907
+        },
+        "CORUNDUM": {
+          "prob": 0.09,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.4796
+        },
+        "GOLD": {
+          "prob": 0.05,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.3
+        },
+        "QUANTANIUM": {
+          "prob": 0.02,
+          "minPct": 0.2,
+          "maxPct": 0.41,
+          "medPct": 0.2813
+        }
+      }
+    },
+    "ATACAMITE": {
+      "users": 69,
+      "scans": 1102,
+      "clusters": 272,
+      "clusterCount": {
+        "min": 1,
+        "max": 11,
+        "med": 6
+      },
+      "mass": {
+        "min": 0,
+        "max": 148478,
+        "med": 9012
+      },
+      "inst": {
+        "min": 0,
+        "max": 994,
+        "med": 44.49
+      },
+      "res": {
+        "min": 0,
+        "max": 14.78,
+        "med": 0.15
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.03,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.138
+        },
+        "IRON": {
+          "prob": 0.31,
+          "minPct": 0,
+          "maxPct": 0.86,
+          "medPct": 0.5064
+        },
+        "HEPHAESTANITE": {
+          "prob": 0.28,
+          "minPct": 0,
+          "maxPct": 0.6,
+          "medPct": 0.42
+        },
+        "AGRICIUM": {
+          "prob": 0.26,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.3961
+        },
+        "CORUNDUM": {
+          "prob": 0.2,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.5195000000000001
+        },
+        "GOLD": {
+          "prob": 0.2,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.3018
+        },
+        "TITANIUM": {
+          "prob": 0.15,
+          "minPct": 0,
+          "maxPct": 0.69,
+          "medPct": 0.48
+        },
+        "ALUMINUM": {
+          "prob": 0.14,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.5018
+        },
+        "BEXALITE": {
+          "prob": 0.11,
+          "minPct": 0.15,
+          "maxPct": 0.47,
+          "medPct": 0.2889
+        },
+        "QUARTZ": {
+          "prob": 0.11,
+          "minPct": 0.31,
+          "maxPct": 0.99,
+          "medPct": 0.51
+        },
+        "TUNGSTEN": {
+          "prob": 0.07,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5242
+        },
+        "TARANITE": {
+          "prob": 0.06,
+          "minPct": 0,
+          "maxPct": 0.49,
+          "medPct": 0.3045
+        },
+        "COPPER": {
+          "prob": 0.03,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.5013000000000001
+        },
+        "QUANTANIUM": {
+          "prob": 0.03,
+          "minPct": 0.21,
+          "maxPct": 0.48,
+          "medPct": 0.30670000000000003
+        }
+      }
+    },
+    "FELSIC": {
+      "users": 80,
+      "scans": 1448,
+      "clusters": 325,
+      "clusterCount": {
+        "min": 1,
+        "max": 14,
+        "med": 5
+      },
+      "mass": {
+        "min": 0,
+        "max": 28347,
+        "med": 2411
+      },
+      "inst": {
+        "min": 0,
+        "max": 345,
+        "med": 14.8
+      },
+      "res": {
+        "min": 0,
+        "max": 76.2,
+        "med": 0.26
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 0.98,
+          "medPct": 0.13460000000000005
+        },
+        "BERYL": {
+          "prob": 0.49,
+          "minPct": 0,
+          "maxPct": 0.82,
+          "medPct": 0.40549999999999997
+        },
+        "TITANIUM": {
+          "prob": 0.33,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.5068
+        },
+        "TARANITE": {
+          "prob": 0.2,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.3
+        },
+        "QUARTZ": {
+          "prob": 0.19,
+          "minPct": 0,
+          "maxPct": 0.86,
+          "medPct": 0.5086999999999999
+        },
+        "IRON": {
+          "prob": 0.14,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5
+        },
+        "CORUNDUM": {
+          "prob": 0.12,
+          "minPct": 0.02,
+          "maxPct": 0.7,
+          "medPct": 0.5112
+        },
+        "ALUMINUM": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.5059
+        },
+        "BEXALITE": {
+          "prob": 0.11,
+          "minPct": 0.05,
+          "maxPct": 0.5,
+          "medPct": 0.3079
+        },
+        "GOLD": {
+          "prob": 0.08,
+          "minPct": 0.02,
+          "maxPct": 0.49,
+          "medPct": 0.3017
+        },
+        "TUNGSTEN": {
+          "prob": 0.08,
+          "minPct": 0.3,
+          "maxPct": 0.9,
+          "medPct": 0.4843
+        },
+        "COPPER": {
+          "prob": 0.05,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.5501
+        },
+        "QUANTANIUM": {
+          "prob": 0.05,
+          "minPct": 0.21,
+          "maxPct": 0.49,
+          "medPct": 0.3221
+        }
+      }
+    },
+    "GNEISS": {
+      "users": 91,
+      "scans": 1798,
+      "clusters": 392,
+      "clusterCount": {
+        "min": 1,
+        "max": 12,
+        "med": 6
+      },
+      "mass": {
+        "min": 0,
+        "max": 83998,
+        "med": 2365
+      },
+      "inst": {
+        "min": 0,
+        "max": 3316,
+        "med": 17.25
+      },
+      "res": {
+        "min": 0,
+        "max": 3380,
+        "med": 0.09
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.01,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.15
+        },
+        "HEPHAESTANITE": {
+          "prob": 0.38,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.40259999999999996
+        },
+        "TITANIUM": {
+          "prob": 0.37,
+          "minPct": 0,
+          "maxPct": 0.99,
+          "medPct": 0.4993
+        },
+        "ALUMINUM": {
+          "prob": 0.23,
+          "minPct": 0,
+          "maxPct": 0.9,
+          "medPct": 0.5104
+        },
+        "TARANITE": {
+          "prob": 0.2,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.31
+        },
+        "BEXALITE": {
+          "prob": 0.18,
+          "minPct": 0,
+          "maxPct": 0.68,
+          "medPct": 0.3
+        },
+        "QUARTZ": {
+          "prob": 0.13,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.5092
+        },
+        "CORUNDUM": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5178
+        },
+        "GOLD": {
+          "prob": 0.1,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.29
+        },
+        "IRON": {
+          "prob": 0.1,
+          "minPct": 0,
+          "maxPct": 0.75,
+          "medPct": 0.5093
+        },
+        "COPPER": {
+          "prob": 0.05,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.4812
+        },
+        "QUANTANIUM": {
+          "prob": 0.04,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.30010000000000003
+        }
+      }
+    },
+    "GRANITE": {
+      "users": 131,
+      "scans": 2679,
+      "clusters": 619,
+      "clusterCount": {
+        "min": 1,
+        "max": 11,
+        "med": 6
+      },
+      "mass": {
+        "min": 0,
+        "max": 102697,
+        "med": 9359
+      },
+      "inst": {
+        "min": 0,
+        "max": 4857,
+        "med": 15.66
+      },
+      "res": {
+        "min": 0,
+        "max": 3396,
+        "med": 0.17
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.1472
+        },
+        "ALUMINUM": {
+          "prob": 0.44,
+          "minPct": 0,
+          "maxPct": 0.99,
+          "medPct": 0.4938
+        },
+        "BORASE": {
+          "prob": 0.44,
+          "minPct": 0,
+          "maxPct": 0.6,
+          "medPct": 0.40259999999999996
+        },
+        "TITANIUM": {
+          "prob": 0.29,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.5032
+        },
+        "GOLD": {
+          "prob": 0.23,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.31120000000000003
+        },
+        "QUARTZ": {
+          "prob": 0.1,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5
+        },
+        "BEXALITE": {
+          "prob": 0.09,
+          "minPct": 0.11,
+          "maxPct": 0.61,
+          "medPct": 0.3
+        },
+        "QUANTANIUM": {
+          "prob": 0.09,
+          "minPct": 0.13,
+          "maxPct": 0.77,
+          "medPct": 0.31
+        },
+        "IRON": {
+          "prob": 0.08,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.5164
+        },
+        "CORUNDUM": {
+          "prob": 0.07,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.5042
+        },
+        "TARANITE": {
+          "prob": 0.07,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.32
+        },
+        "COPPER": {
+          "prob": 0.02,
+          "minPct": 0.31,
+          "maxPct": 0.72,
+          "medPct": 0.5743
+        }
+      }
+    },
+    "IGNEOUS": {
+      "users": 134,
+      "scans": 2574,
+      "clusters": 596,
+      "clusterCount": {
+        "min": 1,
+        "max": 12,
+        "med": 6
+      },
+      "mass": {
+        "min": 0,
+        "max": 358400,
+        "med": 12187
+      },
+      "inst": {
+        "min": 0,
+        "max": 980,
+        "med": 51.3
+      },
+      "res": {
+        "min": 0,
+        "max": 0.84,
+        "med": 0.22
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.05,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.1581999999999999
+        },
+        "LARANITE": {
+          "prob": 0.41,
+          "minPct": 0,
+          "maxPct": 0.85,
+          "medPct": 0.4032
+        },
+        "ALUMINUM": {
+          "prob": 0.34,
+          "minPct": 0,
+          "maxPct": 0.91,
+          "medPct": 0.48950000000000005
+        },
+        "TITANIUM": {
+          "prob": 0.29,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.4939
+        },
+        "GOLD": {
+          "prob": 0.19,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.31
+        },
+        "TARANITE": {
+          "prob": 0.16,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.3057
+        },
+        "IRON": {
+          "prob": 0.13,
+          "minPct": 0.15,
+          "maxPct": 0.83,
+          "medPct": 0.5
+        },
+        "CORUNDUM": {
+          "prob": 0.1,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.49
+        },
+        "TUNGSTEN": {
+          "prob": 0.1,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.4985
+        },
+        "BEXALITE": {
+          "prob": 0.09,
+          "minPct": 0.01,
+          "maxPct": 0.5,
+          "medPct": 0.31379999999999997
+        },
+        "QUANTANIUM": {
+          "prob": 0.07,
+          "minPct": 0.09,
+          "maxPct": 0.49,
+          "medPct": 0.3129
+        },
+        "QUARTZ": {
+          "prob": 0.07,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.4853
+        },
+        "COPPER": {
+          "prob": 0.01,
+          "minPct": 0.31,
+          "maxPct": 0.69,
+          "medPct": 0.4988
+        }
+      }
+    },
+    "OBSIDIAN": {
+      "users": 92,
+      "scans": 1439,
+      "clusters": 325,
+      "clusterCount": {
+        "min": 1,
+        "max": 9,
+        "med": 6
+      },
+      "mass": {
+        "min": 0,
+        "max": 59335,
+        "med": 4479
+      },
+      "inst": {
+        "min": 0,
+        "max": 386,
+        "med": 17.99
+      },
+      "res": {
+        "min": 0,
+        "max": 0.97,
+        "med": 0.2
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.03,
+          "minPct": 0,
+          "maxPct": 0.97,
+          "medPct": 0.13859999999999995
+        },
+        "ALUMINUM": {
+          "prob": 0.45,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.5
+        },
+        "BERYL": {
+          "prob": 0.35,
+          "minPct": 0,
+          "maxPct": 0.6,
+          "medPct": 0.4
+        },
+        "IRON": {
+          "prob": 0.19,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.4902
+        },
+        "BORASE": {
+          "prob": 0.17,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.39289999999999997
+        },
+        "GOLD": {
+          "prob": 0.15,
+          "minPct": 0.02,
+          "maxPct": 0.49,
+          "medPct": 0.31
+        },
+        "TARANITE": {
+          "prob": 0.14,
+          "minPct": 0,
+          "maxPct": 0.86,
+          "medPct": 0.29
+        },
+        "CORUNDUM": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 0.97,
+          "medPct": 0.51
+        },
+        "QUARTZ": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.51
+        },
+        "BEXALITE": {
+          "prob": 0.07,
+          "minPct": 0.18,
+          "maxPct": 0.47,
+          "medPct": 0.31
+        },
+        "TUNGSTEN": {
+          "prob": 0.07,
+          "minPct": 0.09,
+          "maxPct": 0.69,
+          "medPct": 0.5025999999999999
+        },
+        "COPPER": {
+          "prob": 0.04,
+          "minPct": 0.02,
+          "maxPct": 1,
+          "medPct": 0.48469999999999996
+        },
+        "TITANIUM": {
+          "prob": 0.04,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5101
+        },
+        "QUANTANIUM": {
+          "prob": 0.03,
+          "minPct": 0.2,
+          "maxPct": 0.46,
+          "medPct": 0.2939
+        }
+      }
+    },
+    "QUARTZITE": {
+      "users": 79,
+      "scans": 1476,
+      "clusters": 332,
+      "clusterCount": {
+        "min": 1,
+        "max": 10,
+        "med": 5
+      },
+      "mass": {
+        "min": 0,
+        "max": 45501,
+        "med": 4118
+      },
+      "inst": {
+        "min": 0,
+        "max": 2052,
+        "med": 26.25
+      },
+      "res": {
+        "min": 0,
+        "max": 0.92,
+        "med": 0.1
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.03,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.13229999999999997
+        },
+        "ALUMINUM": {
+          "prob": 0.43,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.4959
+        },
+        "HEPHAESTANITE": {
+          "prob": 0.4,
+          "minPct": 0,
+          "maxPct": 0.6,
+          "medPct": 0.4045
+        },
+        "IRON": {
+          "prob": 0.22,
+          "minPct": 0,
+          "maxPct": 0.81,
+          "medPct": 0.49
+        },
+        "AGRICIUM": {
+          "prob": 0.16,
+          "minPct": 0.16,
+          "maxPct": 1,
+          "medPct": 0.3994
+        },
+        "TARANITE": {
+          "prob": 0.15,
+          "minPct": 0.07,
+          "maxPct": 1,
+          "medPct": 0.3077
+        },
+        "BEXALITE": {
+          "prob": 0.14,
+          "minPct": 0,
+          "maxPct": 0.62,
+          "medPct": 0.3
+        },
+        "CORUNDUM": {
+          "prob": 0.14,
+          "minPct": 0.13,
+          "maxPct": 0.7,
+          "medPct": 0.4863
+        },
+        "QUARTZ": {
+          "prob": 0.11,
+          "minPct": 0,
+          "maxPct": 0.92,
+          "medPct": 0.4484
+        },
+        "TITANIUM": {
+          "prob": 0.09,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.4911
+        },
+        "GOLD": {
+          "prob": 0.06,
+          "minPct": 0,
+          "maxPct": 0.48,
+          "medPct": 0.29710000000000003
+        },
+        "COPPER": {
+          "prob": 0.03,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.53
+        },
+        "QUANTANIUM": {
+          "prob": 0.02,
+          "minPct": 0.16,
+          "maxPct": 0.47,
+          "medPct": 0.27399999999999997
+        }
+      }
+    },
+    "SHALE": {
+      "users": 100,
+      "scans": 1626,
+      "clusters": 367,
+      "clusterCount": {
+        "min": 1,
+        "max": 12,
+        "med": 6
+      },
+      "mass": {
+        "min": 0,
+        "max": 103768,
+        "med": 6452
+      },
+      "inst": {
+        "min": 0,
+        "max": 547,
+        "med": 29.96
+      },
+      "res": {
+        "min": 0,
+        "max": 1,
+        "med": 0.21
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.17
+        },
+        "ALUMINUM": {
+          "prob": 0.38,
+          "minPct": 0,
+          "maxPct": 0.98,
+          "medPct": 0.49
+        },
+        "LARANITE": {
+          "prob": 0.37,
+          "minPct": 0,
+          "maxPct": 0.68,
+          "medPct": 0.41
+        },
+        "GOLD": {
+          "prob": 0.26,
+          "minPct": 0,
+          "maxPct": 0.72,
+          "medPct": 0.3129
+        },
+        "CORUNDUM": {
+          "prob": 0.21,
+          "minPct": 0,
+          "maxPct": 0.98,
+          "medPct": 0.4814
+        },
+        "IRON": {
+          "prob": 0.14,
+          "minPct": 0.03,
+          "maxPct": 0.7,
+          "medPct": 0.4802
+        },
+        "QUARTZ": {
+          "prob": 0.12,
+          "minPct": 0.09,
+          "maxPct": 0.7,
+          "medPct": 0.4632
+        },
+        "TARANITE": {
+          "prob": 0.12,
+          "minPct": 0,
+          "maxPct": 0.64,
+          "medPct": 0.3008
+        },
+        "TITANIUM": {
+          "prob": 0.1,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.48
+        },
+        "BEXALITE": {
+          "prob": 0.07,
+          "minPct": 0.01,
+          "maxPct": 0.5,
+          "medPct": 0.3066
+        },
+        "QUANTANIUM": {
+          "prob": 0.07,
+          "minPct": 0.01,
+          "maxPct": 0.5,
+          "medPct": 0.3136
+        },
+        "COPPER": {
+          "prob": 0.05,
+          "minPct": 0.31,
+          "maxPct": 0.97,
+          "medPct": 0.5027
+        }
+      }
+    }
+  },
+  "PYRO": {
+    "CTYPE": {
+      "users": 58,
+      "scans": 385,
+      "clusters": 294,
+      "clusterCount": {
+        "min": 1,
+        "max": 7,
+        "med": 1
+      },
+      "mass": {
+        "min": 101,
+        "max": 63261,
+        "med": 5144
+      },
+      "inst": {
+        "min": 0,
+        "max": 613,
+        "med": 31.43
+      },
+      "res": {
+        "min": 0,
+        "max": 0.9,
+        "med": 0.09
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 0.91,
+          "medPct": 0.14140000000000008
+        },
+        "HEPHAESTANITE": {
+          "prob": 0.43,
+          "minPct": 0.04,
+          "maxPct": 0.6,
+          "medPct": 0.41
+        },
+        "TARANITE": {
+          "prob": 0.22,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.32
+        },
+        "BEXALITE": {
+          "prob": 0.16,
+          "minPct": 0.21,
+          "maxPct": 0.49,
+          "medPct": 0.2939
+        },
+        "TITANIUM": {
+          "prob": 0.14,
+          "minPct": 0.3,
+          "maxPct": 0.67,
+          "medPct": 0.5059
+        },
+        "ALUMINUM": {
+          "prob": 0.13,
+          "minPct": 0.31,
+          "maxPct": 0.69,
+          "medPct": 0.5422
+        },
+        "COPPER": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.4822
+        },
+        "TUNGSTEN": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.52
+        },
+        "CORUNDUM": {
+          "prob": 0.12,
+          "minPct": 0.31,
+          "maxPct": 0.82,
+          "medPct": 0.5302
+        },
+        "GOLD": {
+          "prob": 0.1,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.32
+        },
+        "IRON": {
+          "prob": 0.09,
+          "minPct": 0.31,
+          "maxPct": 0.68,
+          "medPct": 0.5033
+        },
+        "QUARTZ": {
+          "prob": 0.09,
+          "minPct": 0.09,
+          "maxPct": 0.69,
+          "medPct": 0.4922
+        },
+        "TIN": {
+          "prob": 0.09,
+          "minPct": 0.31,
+          "maxPct": 0.9,
+          "medPct": 0.4966
+        },
+        "SILICON": {
+          "prob": 0.06,
+          "minPct": 0.31,
+          "maxPct": 0.68,
+          "medPct": 0.434
+        },
+        "QUANTANIUM": {
+          "prob": 0.03,
+          "minPct": 0.21,
+          "maxPct": 0.32,
+          "medPct": 0.2249
+        },
+        "RICCITE": {
+          "prob": 0.01,
+          "minPct": 0.22,
+          "maxPct": 0.33,
+          "medPct": 0.22
+        },
+        "STILERON": {
+          "prob": 0.01,
+          "minPct": 0.27,
+          "maxPct": 0.46,
+          "medPct": 0.31739999999999996
+        }
+      }
+    },
+    "ETYPE": {
+      "users": 56,
+      "scans": 556,
+      "clusters": 449,
+      "clusterCount": {
+        "min": 1,
+        "max": 6,
+        "med": 1
+      },
+      "mass": {
+        "min": 92,
+        "max": 75339,
+        "med": 6306
+      },
+      "inst": {
+        "min": 0,
+        "max": 373.63,
+        "med": 32.46
+      },
+      "res": {
+        "min": 0,
+        "max": 0.57,
+        "med": 0.23
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.03,
+          "minPct": 0,
+          "maxPct": 0.79,
+          "medPct": 0.14680000000000004
+        },
+        "BERYL": {
+          "prob": 0.38,
+          "minPct": 0.3,
+          "maxPct": 0.59,
+          "medPct": 0.41
+        },
+        "GOLD": {
+          "prob": 0.33,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.3055
+        },
+        "ALUMINUM": {
+          "prob": 0.15,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5061
+        },
+        "TIN": {
+          "prob": 0.13,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.5063
+        },
+        "TUNGSTEN": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5136
+        },
+        "TITANIUM": {
+          "prob": 0.12,
+          "minPct": 0.3,
+          "maxPct": 0.68,
+          "medPct": 0.4964
+        },
+        "CORUNDUM": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.53
+        },
+        "IRON": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 0.89,
+          "medPct": 0.4802
+        },
+        "TARANITE": {
+          "prob": 0.11,
+          "minPct": 0.2,
+          "maxPct": 0.44,
+          "medPct": 0.2718
+        },
+        "QUARTZ": {
+          "prob": 0.1,
+          "minPct": 0.33,
+          "maxPct": 0.88,
+          "medPct": 0.51
+        },
+        "BEXALITE": {
+          "prob": 0.09,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.2764
+        },
+        "COPPER": {
+          "prob": 0.08,
+          "minPct": 0.31,
+          "maxPct": 0.69,
+          "medPct": 0.52
+        },
+        "SILICON": {
+          "prob": 0.08,
+          "minPct": 0.32,
+          "maxPct": 0.69,
+          "medPct": 0.5202
+        },
+        "QUANTANIUM": {
+          "prob": 0.03,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.2626
+        },
+        "RICCITE": {
+          "prob": 0.01,
+          "minPct": 0.26,
+          "maxPct": 0.47,
+          "medPct": 0.30519999999999997
+        },
+        "STILERON": {
+          "prob": 0.01,
+          "minPct": 0.26,
+          "maxPct": 0.46,
+          "medPct": 0.273
+        }
+      }
+    },
+    "ITYPE": {
+      "users": 46,
+      "scans": 261,
+      "clusters": 216,
+      "clusterCount": {
+        "min": 1,
+        "max": 5,
+        "med": 1
+      },
+      "mass": {
+        "min": 0,
+        "max": 47477,
+        "med": 3531
+      },
+      "inst": {
+        "min": 0,
+        "max": 289.43,
+        "med": 34.27
+      },
+      "res": {
+        "min": 0,
+        "max": 0.95,
+        "med": 0.1
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.03,
+          "minPct": 0,
+          "maxPct": 0.77,
+          "medPct": 0.14
+        },
+        "ICE": {
+          "prob": 0.84,
+          "minPct": 0,
+          "maxPct": 0.69,
+          "medPct": 0.5131
+        },
+        "HEPHAESTANITE": {
+          "prob": 0.37,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.3981
+        },
+        "AGRICIUM": {
+          "prob": 0.24,
+          "minPct": 0.31,
+          "maxPct": 0.6,
+          "medPct": 0.3887
+        },
+        "TARANITE": {
+          "prob": 0.11,
+          "minPct": 0.21,
+          "maxPct": 0.42,
+          "medPct": 0.27
+        },
+        "BORASE": {
+          "prob": 0.09,
+          "minPct": 0.31,
+          "maxPct": 0.59,
+          "medPct": 0.38
+        },
+        "BEXALITE": {
+          "prob": 0.05,
+          "minPct": 0.03,
+          "maxPct": 0.36,
+          "medPct": 0.307
+        },
+        "GOLD": {
+          "prob": 0.05,
+          "minPct": 0.2,
+          "maxPct": 0.39,
+          "medPct": 0.2672
+        },
+        "RICCITE": {
+          "prob": 0.03,
+          "minPct": 0.22,
+          "maxPct": 0.4,
+          "medPct": 0.3
+        },
+        "STILERON": {
+          "prob": 0.01,
+          "minPct": 0.42,
+          "maxPct": 0.48,
+          "medPct": 0.4238
+        }
+      }
+    },
+    "MTYPE": {
+      "users": 62,
+      "scans": 529,
+      "clusters": 410,
+      "clusterCount": {
+        "min": 1,
+        "max": 5,
+        "med": 1
+      },
+      "mass": {
+        "min": 6,
+        "max": 85353,
+        "med": 9444
+      },
+      "inst": {
+        "min": 0,
+        "max": 753.93,
+        "med": 42.3
+      },
+      "res": {
+        "min": 0,
+        "max": 57.3,
+        "med": 0.22
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.03,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.127
+        },
+        "AGRICIUM": {
+          "prob": 0.6,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.4
+        },
+        "GOLD": {
+          "prob": 0.22,
+          "minPct": 0.09,
+          "maxPct": 0.63,
+          "medPct": 0.3097
+        },
+        "CORUNDUM": {
+          "prob": 0.15,
+          "minPct": 0.3,
+          "maxPct": 0.68,
+          "medPct": 0.5288
+        },
+        "TITANIUM": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.51
+        },
+        "IRON": {
+          "prob": 0.12,
+          "minPct": 0.31,
+          "maxPct": 0.69,
+          "medPct": 0.46590000000000004
+        },
+        "ALUMINUM": {
+          "prob": 0.11,
+          "minPct": 0.32,
+          "maxPct": 0.86,
+          "medPct": 0.51
+        },
+        "TIN": {
+          "prob": 0.1,
+          "minPct": 0.03,
+          "maxPct": 0.69,
+          "medPct": 0.47
+        },
+        "TUNGSTEN": {
+          "prob": 0.1,
+          "minPct": 0.31,
+          "maxPct": 0.68,
+          "medPct": 0.47
+        },
+        "COPPER": {
+          "prob": 0.09,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.57
+        },
+        "QUARTZ": {
+          "prob": 0.08,
+          "minPct": 0.33,
+          "maxPct": 0.7,
+          "medPct": 0.483
+        },
+        "SILICON": {
+          "prob": 0.08,
+          "minPct": 0.3,
+          "maxPct": 0.91,
+          "medPct": 0.5453
+        },
+        "TARANITE": {
+          "prob": 0.05,
+          "minPct": 0.21,
+          "maxPct": 0.4,
+          "medPct": 0.2902
+        },
+        "BEXALITE": {
+          "prob": 0.03,
+          "minPct": 0.21,
+          "maxPct": 0.41,
+          "medPct": 0.269
+        },
+        "QUANTANIUM": {
+          "prob": 0.02,
+          "minPct": 0.2,
+          "maxPct": 0.48,
+          "medPct": 0.2854
+        },
+        "RICCITE": {
+          "prob": 0.01,
+          "minPct": 0.21,
+          "maxPct": 0.33,
+          "medPct": 0.24
+        },
+        "STILERON": {
+          "prob": 0.01,
+          "minPct": 0.22,
+          "maxPct": 0.4,
+          "medPct": 0.36
+        },
+        "TORITE": {
+          "prob": 0.01,
+          "minPct": 0.34,
+          "maxPct": 0.68,
+          "medPct": 0.6631999999999999
+        }
+      }
+    },
+    "PTYPE": {
+      "users": 59,
+      "scans": 372,
+      "clusters": 308,
+      "clusterCount": {
+        "min": 1,
+        "max": 7,
+        "med": 1
+      },
+      "mass": {
+        "min": 226,
+        "max": 60862,
+        "med": 5805
+      },
+      "inst": {
+        "min": 0,
+        "max": 366,
+        "med": 27.22
+      },
+      "res": {
+        "min": 0,
+        "max": 0.63,
+        "med": 0.22
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.01,
+          "minPct": 0,
+          "maxPct": 0.77,
+          "medPct": 0.12
+        },
+        "LARANITE": {
+          "prob": 0.45,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.4175
+        },
+        "TARANITE": {
+          "prob": 0.2,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.31980000000000003
+        },
+        "BEXALITE": {
+          "prob": 0.18,
+          "minPct": 0.2,
+          "maxPct": 0.48,
+          "medPct": 0.31
+        },
+        "ALUMINUM": {
+          "prob": 0.17,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.49079999999999996
+        },
+        "CORUNDUM": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.52
+        },
+        "IRON": {
+          "prob": 0.11,
+          "minPct": 0.32,
+          "maxPct": 0.7,
+          "medPct": 0.53
+        },
+        "QUARTZ": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5
+        },
+        "TITANIUM": {
+          "prob": 0.11,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.54
+        },
+        "SILICON": {
+          "prob": 0.1,
+          "minPct": 0.3,
+          "maxPct": 0.67,
+          "medPct": 0.5019
+        },
+        "TIN": {
+          "prob": 0.1,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.53
+        },
+        "COPPER": {
+          "prob": 0.09,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5147
+        },
+        "TUNGSTEN": {
+          "prob": 0.08,
+          "minPct": 0.31,
+          "maxPct": 0.67,
+          "medPct": 0.42
+        },
+        "GOLD": {
+          "prob": 0.06,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.2773
+        },
+        "QUANTANIUM": {
+          "prob": 0.03,
+          "minPct": 0.21,
+          "maxPct": 0.36,
+          "medPct": 0.3197
+        },
+        "ICE": {
+          "prob": 0.01,
+          "minPct": 0.34,
+          "maxPct": 0.59,
+          "medPct": 0.34
+        },
+        "RICCITE": {
+          "prob": 0.01,
+          "minPct": 0.31,
+          "maxPct": 0.34,
+          "medPct": 0.31
+        },
+        "STILERON": {
+          "prob": 0.01,
+          "minPct": 0.25,
+          "maxPct": 0.32,
+          "medPct": 0.2626
+        }
+      }
+    },
+    "QTYPE": {
+      "users": 54,
+      "scans": 477,
+      "clusters": 369,
+      "clusterCount": {
+        "min": 1,
+        "max": 4,
+        "med": 1
+      },
+      "mass": {
+        "min": 628,
+        "max": 84071,
+        "med": 9829
+      },
+      "inst": {
+        "min": 0,
+        "max": 246.22,
+        "med": 32.55
+      },
+      "res": {
+        "min": 0,
+        "max": 0.61,
+        "med": 0.2
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 0.77,
+          "medPct": 0.13
+        },
+        "LARANITE": {
+          "prob": 0.29,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.4045
+        },
+        "BORASE": {
+          "prob": 0.23,
+          "minPct": 0.3,
+          "maxPct": 0.58,
+          "medPct": 0.41
+        },
+        "TITANIUM": {
+          "prob": 0.19,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.51
+        },
+        "GOLD": {
+          "prob": 0.14,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.2992
+        },
+        "ALUMINUM": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.5
+        },
+        "BEXALITE": {
+          "prob": 0.12,
+          "minPct": 0.2,
+          "maxPct": 0.48,
+          "medPct": 0.2795
+        },
+        "TARANITE": {
+          "prob": 0.12,
+          "minPct": 0.2,
+          "maxPct": 0.47,
+          "medPct": 0.2838
+        },
+        "TUNGSTEN": {
+          "prob": 0.12,
+          "minPct": 0.31,
+          "maxPct": 0.69,
+          "medPct": 0.43
+        },
+        "CORUNDUM": {
+          "prob": 0.11,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.5142
+        },
+        "IRON": {
+          "prob": 0.1,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5
+        },
+        "QUARTZ": {
+          "prob": 0.1,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.47
+        },
+        "TIN": {
+          "prob": 0.1,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.4969
+        },
+        "COPPER": {
+          "prob": 0.09,
+          "minPct": 0.31,
+          "maxPct": 0.68,
+          "medPct": 0.4417
+        },
+        "SILICON": {
+          "prob": 0.07,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5029
+        },
+        "QUANTANIUM": {
+          "prob": 0.04,
+          "minPct": 0.23,
+          "maxPct": 0.43,
+          "medPct": 0.268
+        },
+        "STILERON": {
+          "prob": 0.01,
+          "minPct": 0.23,
+          "maxPct": 0.47,
+          "medPct": 0.2512
+        }
+      }
+    },
+    "STYPE": {
+      "users": 57,
+      "scans": 407,
+      "clusters": 320,
+      "clusterCount": {
+        "min": 1,
+        "max": 5,
+        "med": 1
+      },
+      "mass": {
+        "min": 27,
+        "max": 77713,
+        "med": 5263
+      },
+      "inst": {
+        "min": 0,
+        "max": 981,
+        "med": 29.94
+      },
+      "res": {
+        "min": 0,
+        "max": 0.57,
+        "med": 0.26
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 0.71,
+          "medPct": 0.12
+        },
+        "BERYL": {
+          "prob": 0.43,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.4114
+        },
+        "LARANITE": {
+          "prob": 0.19,
+          "minPct": 0.3,
+          "maxPct": 0.57,
+          "medPct": 0.39740000000000003
+        },
+        "ALUMINUM": {
+          "prob": 0.18,
+          "minPct": 0,
+          "maxPct": 0.98,
+          "medPct": 0.4685
+        },
+        "TARANITE": {
+          "prob": 0.17,
+          "minPct": 0.2,
+          "maxPct": 0.48,
+          "medPct": 0.29
+        },
+        "SILICON": {
+          "prob": 0.16,
+          "minPct": 0.32,
+          "maxPct": 0.7,
+          "medPct": 0.5088
+        },
+        "TITANIUM": {
+          "prob": 0.14,
+          "minPct": 0.31,
+          "maxPct": 0.68,
+          "medPct": 0.49
+        },
+        "BEXALITE": {
+          "prob": 0.13,
+          "minPct": 0.01,
+          "maxPct": 0.5,
+          "medPct": 0.2988
+        },
+        "TIN": {
+          "prob": 0.11,
+          "minPct": 0.31,
+          "maxPct": 0.69,
+          "medPct": 0.44
+        },
+        "IRON": {
+          "prob": 0.1,
+          "minPct": 0.31,
+          "maxPct": 0.69,
+          "medPct": 0.52
+        },
+        "TUNGSTEN": {
+          "prob": 0.1,
+          "minPct": 0.31,
+          "maxPct": 0.68,
+          "medPct": 0.4823
+        },
+        "CORUNDUM": {
+          "prob": 0.08,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.45
+        },
+        "QUARTZ": {
+          "prob": 0.07,
+          "minPct": 0.32,
+          "maxPct": 0.68,
+          "medPct": 0.47
+        },
+        "COPPER": {
+          "prob": 0.05,
+          "minPct": 0.39,
+          "maxPct": 0.7,
+          "medPct": 0.54
+        },
+        "GOLD": {
+          "prob": 0.05,
+          "minPct": 0.2,
+          "maxPct": 0.48,
+          "medPct": 0.2874
+        },
+        "QUANTANIUM": {
+          "prob": 0.02,
+          "minPct": 0.21,
+          "maxPct": 0.42,
+          "medPct": 0.28
+        }
+      }
+    },
+    "ATACAMITE": {
+      "users": 38,
+      "scans": 1126,
+      "clusters": 152,
+      "clusterCount": {
+        "min": 1,
+        "max": 16,
+        "med": 9
+      },
+      "mass": {
+        "min": 0,
+        "max": 129501,
+        "med": 8424
+      },
+      "inst": {
+        "min": 0,
+        "max": 695,
+        "med": 43.95
+      },
+      "res": {
+        "min": 0,
+        "max": 1.203,
+        "med": 0.18
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.01,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.1503
+        },
+        "AGRICIUM": {
+          "prob": 0.25,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.392
+        },
+        "CORUNDUM": {
+          "prob": 0.25,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.5193
+        },
+        "HEPHAESTANITE": {
+          "prob": 0.25,
+          "minPct": 0.04,
+          "maxPct": 0.59,
+          "medPct": 0.3997
+        },
+        "GOLD": {
+          "prob": 0.21,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.2998
+        },
+        "TITANIUM": {
+          "prob": 0.21,
+          "minPct": 0.02,
+          "maxPct": 0.84,
+          "medPct": 0.4888
+        },
+        "ALUMINUM": {
+          "prob": 0.18,
+          "minPct": 0.02,
+          "maxPct": 0.7,
+          "medPct": 0.5306000000000001
+        },
+        "TIN": {
+          "prob": 0.13,
+          "minPct": 0.16,
+          "maxPct": 0.68,
+          "medPct": 0.5008
+        },
+        "TUNGSTEN": {
+          "prob": 0.09,
+          "minPct": 0.3,
+          "maxPct": 0.88,
+          "medPct": 0.5058
+        },
+        "BEXALITE": {
+          "prob": 0.08,
+          "minPct": 0.08,
+          "maxPct": 0.49,
+          "medPct": 0.293
+        },
+        "QUARTZ": {
+          "prob": 0.07,
+          "minPct": 0.3,
+          "maxPct": 0.92,
+          "medPct": 0.45039999999999997
+        },
+        "TARANITE": {
+          "prob": 0.05,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.2863
+        },
+        "COPPER": {
+          "prob": 0.04,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.4863
+        },
+        "QUANTANIUM": {
+          "prob": 0.03,
+          "minPct": 0.21,
+          "maxPct": 0.47,
+          "medPct": 0.2836
+        },
+        "SILICON": {
+          "prob": 0.03,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.4854
+        }
+      }
+    },
+    "FELSIC": {
+      "users": 35,
+      "scans": 1082,
+      "clusters": 133,
+      "clusterCount": {
+        "min": 1,
+        "max": 17,
+        "med": 9
+      },
+      "mass": {
+        "min": 0,
+        "max": 26252,
+        "med": 2173
+      },
+      "inst": {
+        "min": 0,
+        "max": 1298,
+        "med": 14.56
+      },
+      "res": {
+        "min": 0,
+        "max": 12.98,
+        "med": 0.3
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.01,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.13
+        },
+        "BERYL": {
+          "prob": 0.56,
+          "minPct": 0.25,
+          "maxPct": 0.6,
+          "medPct": 0.4039
+        },
+        "TIN": {
+          "prob": 0.4,
+          "minPct": 0.14,
+          "maxPct": 0.88,
+          "medPct": 0.496
+        },
+        "TITANIUM": {
+          "prob": 0.21,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.4987
+        },
+        "CORUNDUM": {
+          "prob": 0.17,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.4885
+        },
+        "TARANITE": {
+          "prob": 0.17,
+          "minPct": 0.1,
+          "maxPct": 0.49,
+          "medPct": 0.299
+        },
+        "BEXALITE": {
+          "prob": 0.13,
+          "minPct": 0.02,
+          "maxPct": 0.5,
+          "medPct": 0.28
+        },
+        "COPPER": {
+          "prob": 0.08,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.49
+        },
+        "GOLD": {
+          "prob": 0.06,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.27
+        },
+        "ALUMINUM": {
+          "prob": 0.05,
+          "minPct": 0.32,
+          "maxPct": 0.69,
+          "medPct": 0.5135000000000001
+        },
+        "SILICON": {
+          "prob": 0.04,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.4817
+        },
+        "QUARTZ": {
+          "prob": 0.03,
+          "minPct": 0,
+          "maxPct": 0.68,
+          "medPct": 0.4965
+        },
+        "QUANTANIUM": {
+          "prob": 0.02,
+          "minPct": 0.2,
+          "maxPct": 0.48,
+          "medPct": 0.2965
+        },
+        "TUNGSTEN": {
+          "prob": 0.02,
+          "minPct": 0.31,
+          "maxPct": 0.67,
+          "medPct": 0.5014
+        },
+        "RICCITE": {
+          "prob": 0.01,
+          "minPct": 0.22,
+          "maxPct": 0.42,
+          "medPct": 0.2633
+        },
+        "STILERON": {
+          "prob": 0.01,
+          "minPct": 0.2,
+          "maxPct": 0.47,
+          "medPct": 0.3038
+        }
+      }
+    },
+    "GNEISS": {
+      "users": 32,
+      "scans": 734,
+      "clusters": 97,
+      "clusterCount": {
+        "min": 1,
+        "max": 16,
+        "med": 9
+      },
+      "mass": {
+        "min": 0,
+        "max": 21020,
+        "med": 2292
+      },
+      "inst": {
+        "min": 0,
+        "max": 703,
+        "med": 17.39
+      },
+      "res": {
+        "min": 0,
+        "max": 0.9,
+        "med": 0.07
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.14
+        },
+        "HEPHAESTANITE": {
+          "prob": 0.45,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.399
+        },
+        "TITANIUM": {
+          "prob": 0.31,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.469
+        },
+        "CORUNDUM": {
+          "prob": 0.26,
+          "minPct": 0,
+          "maxPct": 0.86,
+          "medPct": 0.4793
+        },
+        "TARANITE": {
+          "prob": 0.19,
+          "minPct": 0,
+          "maxPct": 0.72,
+          "medPct": 0.3098
+        },
+        "BEXALITE": {
+          "prob": 0.16,
+          "minPct": 0.05,
+          "maxPct": 0.5,
+          "medPct": 0.2947
+        },
+        "ALUMINUM": {
+          "prob": 0.13,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.5039
+        },
+        "GOLD": {
+          "prob": 0.11,
+          "minPct": 0.21,
+          "maxPct": 0.5,
+          "medPct": 0.3339
+        },
+        "TIN": {
+          "prob": 0.09,
+          "minPct": 0.08,
+          "maxPct": 0.7,
+          "medPct": 0.49920000000000003
+        },
+        "QUARTZ": {
+          "prob": 0.08,
+          "minPct": 0.31,
+          "maxPct": 0.68,
+          "medPct": 0.47369999999999995
+        },
+        "COPPER": {
+          "prob": 0.06,
+          "minPct": 0.33,
+          "maxPct": 0.69,
+          "medPct": 0.4492
+        },
+        "SILICON": {
+          "prob": 0.06,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.5489
+        },
+        "QUANTANIUM": {
+          "prob": 0.04,
+          "minPct": 0.22,
+          "maxPct": 0.49,
+          "medPct": 0.27940000000000004
+        }
+      }
+    },
+    "GRANITE": {
+      "users": 50,
+      "scans": 1242,
+      "clusters": 163,
+      "clusterCount": {
+        "min": 1,
+        "max": 19,
+        "med": 9
+      },
+      "mass": {
+        "min": 0,
+        "max": 109644,
+        "med": 8775
+      },
+      "inst": {
+        "min": 0,
+        "max": 2139,
+        "med": 15
+      },
+      "res": {
+        "min": 0,
+        "max": 0.68,
+        "med": 0.19
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.04,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.14749999999999996
+        },
+        "BORASE": {
+          "prob": 0.46,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.4014
+        },
+        "ALUMINUM": {
+          "prob": 0.42,
+          "minPct": 0,
+          "maxPct": 0.97,
+          "medPct": 0.49
+        },
+        "TITANIUM": {
+          "prob": 0.33,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.4955
+        },
+        "GOLD": {
+          "prob": 0.23,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.3124
+        },
+        "CORUNDUM": {
+          "prob": 0.12,
+          "minPct": 0.01,
+          "maxPct": 0.7,
+          "medPct": 0.5051
+        },
+        "BEXALITE": {
+          "prob": 0.1,
+          "minPct": 0.2,
+          "maxPct": 0.48,
+          "medPct": 0.3001
+        },
+        "QUANTANIUM": {
+          "prob": 0.08,
+          "minPct": 0.03,
+          "maxPct": 0.49,
+          "medPct": 0.3013
+        },
+        "TARANITE": {
+          "prob": 0.07,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.311
+        },
+        "TIN": {
+          "prob": 0.05,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.4704
+        },
+        "SILICON": {
+          "prob": 0.04,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.48479999999999995
+        },
+        "COPPER": {
+          "prob": 0.03,
+          "minPct": 0.31,
+          "maxPct": 0.69,
+          "medPct": 0.5398
+        },
+        "QUARTZ": {
+          "prob": 0.03,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.55
+        },
+        "IRON": {
+          "prob": 0.02,
+          "minPct": 0.31,
+          "maxPct": 0.64,
+          "medPct": 0.4964
+        },
+        "RICCITE": {
+          "prob": 0.01,
+          "minPct": 0,
+          "maxPct": 0.22,
+          "medPct": 0
+        }
+      }
+    },
+    "IGNEOUS": {
+      "users": 55,
+      "scans": 1395,
+      "clusters": 211,
+      "clusterCount": {
+        "min": 1,
+        "max": 17,
+        "med": 9
+      },
+      "mass": {
+        "min": 0,
+        "max": 156295,
+        "med": 11956
+      },
+      "inst": {
+        "min": 0,
+        "max": 19702,
+        "med": 53.03
+      },
+      "res": {
+        "min": 0,
+        "max": 4.169,
+        "med": 0.24
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.14959999999999996
+        },
+        "TIN": {
+          "prob": 0.39,
+          "minPct": 0.04,
+          "maxPct": 0.7,
+          "medPct": 0.49520000000000003
+        },
+        "LARANITE": {
+          "prob": 0.38,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.4092
+        },
+        "CORUNDUM": {
+          "prob": 0.24,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.5004
+        },
+        "GOLD": {
+          "prob": 0.19,
+          "minPct": 0.11,
+          "maxPct": 0.5,
+          "medPct": 0.3065
+        },
+        "ALUMINUM": {
+          "prob": 0.15,
+          "minPct": 0.3,
+          "maxPct": 0.88,
+          "medPct": 0.5164
+        },
+        "TARANITE": {
+          "prob": 0.15,
+          "minPct": 0.1,
+          "maxPct": 0.5,
+          "medPct": 0.3032
+        },
+        "BEXALITE": {
+          "prob": 0.11,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.3102
+        },
+        "TITANIUM": {
+          "prob": 0.1,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5132
+        },
+        "TUNGSTEN": {
+          "prob": 0.06,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.524
+        },
+        "QUANTANIUM": {
+          "prob": 0.04,
+          "minPct": 0,
+          "maxPct": 0.49,
+          "medPct": 0.3091
+        },
+        "QUARTZ": {
+          "prob": 0.04,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.5201
+        },
+        "RICCITE": {
+          "prob": 0.02,
+          "minPct": 0.21,
+          "maxPct": 0.5,
+          "medPct": 0.3
+        },
+        "SILICON": {
+          "prob": 0.02,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5064
+        },
+        "STILERON": {
+          "prob": 0.01,
+          "minPct": 0.22,
+          "maxPct": 0.49,
+          "medPct": 0.3678
+        }
+      }
+    },
+    "OBSIDIAN": {
+      "users": 40,
+      "scans": 1026,
+      "clusters": 132,
+      "clusterCount": {
+        "min": 1,
+        "max": 17,
+        "med": 9
+      },
+      "mass": {
+        "min": 17,
+        "max": 74481,
+        "med": 5298
+      },
+      "inst": {
+        "min": 0,
+        "max": 5622,
+        "med": 17.1
+      },
+      "res": {
+        "min": 0,
+        "max": 52.87,
+        "med": 0.22
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.03,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.13559999999999994
+        },
+        "BERYL": {
+          "prob": 0.35,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.3966
+        },
+        "BORASE": {
+          "prob": 0.21,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.3987
+        },
+        "TIN": {
+          "prob": 0.17,
+          "minPct": 0.11,
+          "maxPct": 0.7,
+          "medPct": 0.5256000000000001
+        },
+        "TITANIUM": {
+          "prob": 0.16,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.49
+        },
+        "CORUNDUM": {
+          "prob": 0.15,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5184000000000001
+        },
+        "TUNGSTEN": {
+          "prob": 0.14,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.4816
+        },
+        "ALUMINUM": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.5044
+        },
+        "TARANITE": {
+          "prob": 0.13,
+          "minPct": 0.17,
+          "maxPct": 0.48,
+          "medPct": 0.31
+        },
+        "GOLD": {
+          "prob": 0.12,
+          "minPct": 0.2,
+          "maxPct": 0.49,
+          "medPct": 0.309
+        },
+        "IRON": {
+          "prob": 0.09,
+          "minPct": 0,
+          "maxPct": 0.68,
+          "medPct": 0.5312
+        },
+        "BEXALITE": {
+          "prob": 0.07,
+          "minPct": 0.2,
+          "maxPct": 0.56,
+          "medPct": 0.2852
+        },
+        "COPPER": {
+          "prob": 0.07,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.5153
+        },
+        "QUARTZ": {
+          "prob": 0.06,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.501
+        },
+        "SILICON": {
+          "prob": 0.05,
+          "minPct": 0.24,
+          "maxPct": 0.7,
+          "medPct": 0.5016
+        },
+        "QUANTANIUM": {
+          "prob": 0.03,
+          "minPct": 0.2,
+          "maxPct": 0.47,
+          "medPct": 0.27
+        },
+        "RICCITE": {
+          "prob": 0.01,
+          "minPct": 0.13,
+          "maxPct": 0.28,
+          "medPct": 0.2717
+        }
+      }
+    },
+    "QUARTZITE": {
+      "users": 47,
+      "scans": 1288,
+      "clusters": 168,
+      "clusterCount": {
+        "min": 1,
+        "max": 18,
+        "med": 9
+      },
+      "mass": {
+        "min": 0,
+        "max": 69438,
+        "med": 5353
+      },
+      "inst": {
+        "min": 0,
+        "max": 719,
+        "med": 32.82
+      },
+      "res": {
+        "min": 0,
+        "max": 7,
+        "med": 0.12
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.01,
+          "minPct": 0,
+          "maxPct": 0.75,
+          "medPct": 0.14
+        },
+        "HEPHAESTANITE": {
+          "prob": 0.39,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.41
+        },
+        "ALUMINUM": {
+          "prob": 0.18,
+          "minPct": 0.18,
+          "maxPct": 0.69,
+          "medPct": 0.5078
+        },
+        "TIN": {
+          "prob": 0.18,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.48
+        },
+        "BEXALITE": {
+          "prob": 0.15,
+          "minPct": 0,
+          "maxPct": 0.52,
+          "medPct": 0.2959
+        },
+        "CORUNDUM": {
+          "prob": 0.15,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.5031
+        },
+        "TARANITE": {
+          "prob": 0.15,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.29
+        },
+        "TITANIUM": {
+          "prob": 0.14,
+          "minPct": 0.3,
+          "maxPct": 0.84,
+          "medPct": 0.4802
+        },
+        "AGRICIUM": {
+          "prob": 0.13,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.3946
+        },
+        "COPPER": {
+          "prob": 0.13,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.51
+        },
+        "GOLD": {
+          "prob": 0.09,
+          "minPct": 0.08,
+          "maxPct": 0.49,
+          "medPct": 0.3
+        },
+        "IRON": {
+          "prob": 0.06,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5067
+        },
+        "QUARTZ": {
+          "prob": 0.06,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.5139
+        },
+        "TUNGSTEN": {
+          "prob": 0.05,
+          "minPct": 0.31,
+          "maxPct": 0.7,
+          "medPct": 0.4833
+        },
+        "SILICON": {
+          "prob": 0.04,
+          "minPct": 0.3,
+          "maxPct": 0.68,
+          "medPct": 0.4592
+        },
+        "QUANTANIUM": {
+          "prob": 0.01,
+          "minPct": 0.21,
+          "maxPct": 0.43,
+          "medPct": 0.2477
+        }
+      }
+    },
+    "SHALE": {
+      "users": 34,
+      "scans": 1268,
+      "clusters": 167,
+      "clusterCount": {
+        "min": 1,
+        "max": 18,
+        "med": 9
+      },
+      "mass": {
+        "min": 0,
+        "max": 109737,
+        "med": 6558
+      },
+      "inst": {
+        "min": 0,
+        "max": 323.92,
+        "med": 28.57
+      },
+      "res": {
+        "min": 0,
+        "max": 0.93,
+        "med": 0.25
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.01,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.15989999999999993
+        },
+        "LARANITE": {
+          "prob": 0.36,
+          "minPct": 0,
+          "maxPct": 0.6,
+          "medPct": 0.4101
+        },
+        "GOLD": {
+          "prob": 0.26,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.3129
+        },
+        "TITANIUM": {
+          "prob": 0.23,
+          "minPct": 0.3,
+          "maxPct": 0.7,
+          "medPct": 0.5074
+        },
+        "CORUNDUM": {
+          "prob": 0.21,
+          "minPct": 0.3,
+          "maxPct": 1,
+          "medPct": 0.5032
+        },
+        "TIN": {
+          "prob": 0.2,
+          "minPct": 0.2,
+          "maxPct": 1,
+          "medPct": 0.4881
+        },
+        "ALUMINUM": {
+          "prob": 0.17,
+          "minPct": 0,
+          "maxPct": 0.7,
+          "medPct": 0.4743
+        },
+        "TARANITE": {
+          "prob": 0.12,
+          "minPct": 0.18,
+          "maxPct": 0.5,
+          "medPct": 0.3187
+        },
+        "COPPER": {
+          "prob": 0.09,
+          "minPct": 0,
+          "maxPct": 0.85,
+          "medPct": 0.5344
+        },
+        "BEXALITE": {
+          "prob": 0.08,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.31
+        },
+        "TUNGSTEN": {
+          "prob": 0.06,
+          "minPct": 0.3,
+          "maxPct": 0.67,
+          "medPct": 0.4685
+        },
+        "QUANTANIUM": {
+          "prob": 0.04,
+          "minPct": 0.2,
+          "maxPct": 0.48,
+          "medPct": 0.3382
+        },
+        "QUARTZ": {
+          "prob": 0.04,
+          "minPct": 0.31,
+          "maxPct": 0.69,
+          "medPct": 0.49
+        },
+        "RICCITE": {
+          "prob": 0.02,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.3114
+        },
+        "SILICON": {
+          "prob": 0.01,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.5241
+        },
+        "STILERON": {
+          "prob": 0.01,
+          "minPct": 0.22,
+          "maxPct": 0.39,
+          "medPct": 0.3078
+        }
+      }
+    }
+  },
+  "NYX": {
+    "CTYPE": {
+      "users": 64,
+      "scans": 167,
+      "clusters": 125,
+      "clusterCount": {
+        "min": 1,
+        "max": 4,
+        "med": 1
+      },
+      "mass": {
+        "min": 112,
+        "max": 35744,
+        "med": 4046
+      },
+      "inst": {
+        "min": 0.9,
+        "max": 308.9,
+        "med": 35.6
+      },
+      "res": {
+        "min": 0,
+        "max": 0.3,
+        "med": 0.09
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.09,
+          "minPct": 0,
+          "maxPct": 0.71,
+          "medPct": 0.14180000000000004
+        },
+        "QUARTZ": {
+          "prob": 1.08,
+          "minPct": 0.01,
+          "maxPct": 0.7,
+          "medPct": 0.49
+        },
+        "HEPHAESTANITE": {
+          "prob": 0.41,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.4144
+        },
+        "TARANITE": {
+          "prob": 0.25,
+          "minPct": 0,
+          "maxPct": 0.48,
+          "medPct": 0.3256
+        },
+        "BEXALITE": {
+          "prob": 0.2,
+          "minPct": 0.21,
+          "maxPct": 0.49,
+          "medPct": 0.3059
+        },
+        "GOLD": {
+          "prob": 0.15,
+          "minPct": 0,
+          "maxPct": 0.49,
+          "medPct": 0.3066
+        },
+        "QUANTANIUM": {
+          "prob": 0.05,
+          "minPct": 0.22,
+          "maxPct": 0.4,
+          "medPct": 0.26
+        },
+        "ALUMINUM": {
+          "prob": 0.01,
+          "minPct": 0.33,
+          "maxPct": 0.33,
+          "medPct": 0.33
+        }
+      }
+    },
+    "ETYPE": {
+      "users": 100,
+      "scans": 414,
+      "clusters": 305,
+      "clusterCount": {
+        "min": 1,
+        "max": 8,
+        "med": 1
+      },
+      "mass": {
+        "min": 0,
+        "max": 102518,
+        "med": 4410
+      },
+      "inst": {
+        "min": 0,
+        "max": 486.48,
+        "med": 32.73
+      },
+      "res": {
+        "min": 0,
+        "max": 856,
+        "med": 0.18
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.05,
+          "minPct": 0,
+          "maxPct": 0.69,
+          "medPct": 0.12440000000000007
+        },
+        "ALUMINUM": {
+          "prob": 0.55,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.5114
+        },
+        "QUARTZ": {
+          "prob": 0.5,
+          "minPct": 0.02,
+          "maxPct": 0.96,
+          "medPct": 0.5033
+        },
+        "BERYL": {
+          "prob": 0.43,
+          "minPct": 0.24,
+          "maxPct": 0.6,
+          "medPct": 0.4006
+        },
+        "GOLD": {
+          "prob": 0.33,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.3038
+        },
+        "TARANITE": {
+          "prob": 0.09,
+          "minPct": 0.21,
+          "maxPct": 0.48,
+          "medPct": 0.3252
+        },
+        "BEXALITE": {
+          "prob": 0.08,
+          "minPct": 0.04,
+          "maxPct": 0.47,
+          "medPct": 0.2923
+        },
+        "QUANTANIUM": {
+          "prob": 0.02,
+          "minPct": 0.26,
+          "maxPct": 0.5,
+          "medPct": 0.33049999999999996
+        }
+      }
+    },
+    "ITYPE": null,
+    "MTYPE": {
+      "users": 161,
+      "scans": 2331,
+      "clusters": 1869,
+      "clusterCount": {
+        "min": 1,
+        "max": 6,
+        "med": 1
+      },
+      "mass": {
+        "min": 0,
+        "max": 106152,
+        "med": 6604
+      },
+      "inst": {
+        "min": 0,
+        "max": 17896,
+        "med": 120.46
+      },
+      "res": {
+        "min": 0,
+        "max": 0.99,
+        "med": 0.39
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.04,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.15879999999999994
+        },
+        "TORITE": {
+          "prob": 0.95,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.4939
+        },
+        "AGRICIUM": {
+          "prob": 0.5,
+          "minPct": 0,
+          "maxPct": 0.95,
+          "medPct": 0.4043
+        },
+        "LINDINIUM": {
+          "prob": 0.24,
+          "minPct": 0,
+          "maxPct": 0.5,
+          "medPct": 0.305
+        },
+        "QUARTZ": {
+          "prob": 0.09,
+          "minPct": 0.3,
+          "maxPct": 0.95,
+          "medPct": 0.5082
+        },
+        "BEXALITE": {
+          "prob": 0.05,
+          "minPct": 0.06,
+          "maxPct": 0.5,
+          "medPct": 0.31
+        },
+        "TARANITE": {
+          "prob": 0.05,
+          "minPct": 0,
+          "maxPct": 0.66,
+          "medPct": 0.32380000000000003
+        },
+        "SAVRILIUM": {
+          "prob": 0.02,
+          "minPct": 0.2,
+          "maxPct": 0.46,
+          "medPct": 0.29
+        },
+        "GOLD": {
+          "prob": 0.01,
+          "minPct": 0.21,
+          "maxPct": 0.48,
+          "medPct": 0.2979
+        }
+      }
+    },
+    "PTYPE": {
+      "users": 64,
+      "scans": 154,
+      "clusters": 124,
+      "clusterCount": {
+        "min": 1,
+        "max": 4,
+        "med": 1
+      },
+      "mass": {
+        "min": 217,
+        "max": 42714,
+        "med": 5923
+      },
+      "inst": {
+        "min": 0,
+        "max": 737.65,
+        "med": 34.03
+      },
+      "res": {
+        "min": 0,
+        "max": 0.91,
+        "med": 0.14
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.06,
+          "minPct": 0,
+          "maxPct": 0.99,
+          "medPct": 0.13559999999999994
+        },
+        "QUARTZ": {
+          "prob": 1.05,
+          "minPct": 0.01,
+          "maxPct": 0.69,
+          "medPct": 0.49
+        },
+        "LARANITE": {
+          "prob": 0.45,
+          "minPct": 0.14,
+          "maxPct": 0.6,
+          "medPct": 0.4199
+        },
+        "TARANITE": {
+          "prob": 0.2,
+          "minPct": 0,
+          "maxPct": 0.48,
+          "medPct": 0.308
+        },
+        "BEXALITE": {
+          "prob": 0.18,
+          "minPct": 0.14,
+          "maxPct": 0.48,
+          "medPct": 0.28
+        },
+        "QUANTANIUM": {
+          "prob": 0.1,
+          "minPct": 0.22,
+          "maxPct": 0.37,
+          "medPct": 0.28
+        },
+        "GOLD": {
+          "prob": 0.07,
+          "minPct": 0.24,
+          "maxPct": 0.49,
+          "medPct": 0.37520000000000003
+        },
+        "ALUMINUM": {
+          "prob": 0.01,
+          "minPct": 0.45,
+          "maxPct": 0.45,
+          "medPct": 0.45
+        }
+      }
+    },
+    "QTYPE": {
+      "users": 66,
+      "scans": 211,
+      "clusters": 170,
+      "clusterCount": {
+        "min": 1,
+        "max": 5,
+        "med": 1
+      },
+      "mass": {
+        "min": 230,
+        "max": 39663,
+        "med": 7099
+      },
+      "inst": {
+        "min": 0,
+        "max": 458,
+        "med": 31.96
+      },
+      "res": {
+        "min": 0,
+        "max": 0.56,
+        "med": 0.12
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.02,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.1
+        },
+        "QUARTZ": {
+          "prob": 1.01,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.5068
+        },
+        "BORASE": {
+          "prob": 0.32,
+          "minPct": 0.3,
+          "maxPct": 0.75,
+          "medPct": 0.379
+        },
+        "LARANITE": {
+          "prob": 0.3,
+          "minPct": 0,
+          "maxPct": 0.58,
+          "medPct": 0.4361
+        },
+        "TARANITE": {
+          "prob": 0.15,
+          "minPct": 0.06,
+          "maxPct": 0.49,
+          "medPct": 0.28
+        },
+        "GOLD": {
+          "prob": 0.09,
+          "minPct": 0.2,
+          "maxPct": 0.45,
+          "medPct": 0.3059
+        },
+        "BEXALITE": {
+          "prob": 0.08,
+          "minPct": 0.2,
+          "maxPct": 0.42,
+          "medPct": 0.2673
+        },
+        "QUANTANIUM": {
+          "prob": 0.04,
+          "minPct": 0.21,
+          "maxPct": 0.5,
+          "medPct": 0.3
+        }
+      }
+    },
+    "STYPE": {
+      "users": 83,
+      "scans": 267,
+      "clusters": 217,
+      "clusterCount": {
+        "min": 1,
+        "max": 4,
+        "med": 1
+      },
+      "mass": {
+        "min": 67,
+        "max": 42085,
+        "med": 4039
+      },
+      "inst": {
+        "min": 0,
+        "max": 349.81,
+        "med": 37.61
+      },
+      "res": {
+        "min": 0,
+        "max": 0.45,
+        "med": 0.2
+      },
+      "ores": {
+        "INERTMATERIAL": {
+          "prob": 1.05,
+          "minPct": 0,
+          "maxPct": 1,
+          "medPct": 0.1048
+        },
+        "ALUMINUM": {
+          "prob": 0.63,
+          "minPct": 0.31,
+          "maxPct": 1,
+          "medPct": 0.49579999999999996
+        },
+        "BERYL": {
+          "prob": 0.47,
+          "minPct": 0.3,
+          "maxPct": 0.6,
+          "medPct": 0.41590000000000005
+        },
+        "QUARTZ": {
+          "prob": 0.4,
+          "minPct": 0.3,
+          "maxPct": 0.69,
+          "medPct": 0.4961
+        },
+        "TARANITE": {
+          "prob": 0.17,
+          "minPct": 0.2,
+          "maxPct": 0.5,
+          "medPct": 0.3
+        },
+        "LARANITE": {
+          "prob": 0.16,
+          "minPct": 0.3,
+          "maxPct": 0.57,
+          "medPct": 0.41
+        },
+        "BEXALITE": {
+          "prob": 0.11,
+          "minPct": 0.2,
+          "maxPct": 0.44,
+          "medPct": 0.28
+        },
+        "GOLD": {
+          "prob": 0.06,
+          "minPct": 0.23,
+          "maxPct": 0.49,
+          "medPct": 0.3029
+        },
+        "QUANTANIUM": {
+          "prob": 0.03,
+          "minPct": 0.22,
+          "maxPct": 0.44,
+          "medPct": 0.31
+        }
+      }
+    },
+    "ATACAMITE": null,
+    "FELSIC": null,
+    "GNEISS": null,
+    "GRANITE": null,
+    "IGNEOUS": null,
+    "OBSIDIAN": null,
+    "QUARTZITE": null,
+    "SHALE": null
+  }
+}
