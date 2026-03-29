@@ -75,6 +75,31 @@ export function getOreColor(oreName: string): string {
 }
 
 // ---------------------------------------------------------------------------
+// Card styling (Tailwind classes keyed by HeroUI color variant)
+// ---------------------------------------------------------------------------
+
+export interface OreCardStyle {
+  ring: string;
+  bg: string;
+  text: string;
+}
+
+const CARD_STYLE_MAP: Record<string, OreCardStyle> = {
+  warning:   { ring: 'ring-amber-400/40',  bg: 'bg-amber-400/5',  text: 'text-amber-300' },
+  primary:   { ring: 'ring-blue-400/40',   bg: 'bg-blue-400/5',   text: 'text-blue-300' },
+  default:   { ring: 'ring-white/20',      bg: 'bg-white/5',      text: 'text-white/70' },
+  secondary: { ring: 'ring-violet-400/30', bg: 'bg-violet-400/5', text: 'text-violet-300' },
+  success:   { ring: 'ring-green-400/40',  bg: 'bg-green-400/5',  text: 'text-green-300' },
+  danger:    { ring: 'ring-red-400/40',    bg: 'bg-red-400/5',    text: 'text-red-300' },
+};
+
+/** Returns Tailwind card-style classes for a given ore name. */
+export function getOreCardStyles(oreName: string): OreCardStyle {
+  const color = getOreColor(oreName);
+  return CARD_STYLE_MAP[color] ?? CARD_STYLE_MAP.default;
+}
+
+// ---------------------------------------------------------------------------
 // Name formatters
 // ---------------------------------------------------------------------------
 
