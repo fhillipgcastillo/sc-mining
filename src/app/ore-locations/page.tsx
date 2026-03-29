@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getOreLocationsArray, getAllOreTypes } from "@/lib/data";
+import { getOreLocationsArray, getAllOreTypes, getLocationHierarchy } from "@/lib/data";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { OreLocationsClient } from "@/components/ore-locations/OreLocationsClient";
 
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 export default function OreLocationsPage() {
   const allLocations = getOreLocationsArray();
   const allOreTypes = getAllOreTypes();
+  const locationHierarchy = getLocationHierarchy();
 
   return (
     <>
@@ -22,6 +23,7 @@ export default function OreLocationsPage() {
       <OreLocationsClient
         allLocations={allLocations}
         allOreTypes={allOreTypes}
+        locationHierarchy={locationHierarchy}
       />
     </>
   );

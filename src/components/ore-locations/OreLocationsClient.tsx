@@ -9,7 +9,7 @@ import {
   Label,
 } from "@heroui/react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { OreLocationRow } from "@/types";
+import type { OreLocationRow, LocationHierarchyData } from "@/types";
 import { formatLocationName, formatOreName } from "@/lib/constants";
 import { formatProbability, formatPercent, formatNumber } from "@/lib/formatting";
 import { useSort } from "@/hooks/useSort";
@@ -20,11 +20,13 @@ import { StatsCard } from "@/components/shared/StatsCard";
 import { ItemCard } from "@/components/shared/ItemCard";
 import { LocationCard } from "@/components/shared/LocationCard";
 import { ViewModeToggle } from "@/components/shared/ViewModeToggle";
+import { LocationInfoPopover } from "@/components/shared/LocationInfoPopover";
 import { OreLocationsPivotAdapter } from "./OreLocationsPivotAdapter";
 
 interface OreLocationsClientProps {
   allLocations: OreLocationRow[];
   allOreTypes: string[];
+  locationHierarchy: LocationHierarchyData;
 }
 
 const enterAnim = { opacity: 1, y: 0 };
@@ -36,6 +38,7 @@ const transitionOut = { duration: 0.15 };
 export function OreLocationsClient({
   allLocations,
   allOreTypes,
+  locationHierarchy,
 }: OreLocationsClientProps) {
   const [activeTab, setActiveTab] = useState<string>("find-ore");
   const [viewMode, setViewMode] = useState<"cards" | "matrix">("cards");
@@ -75,6 +78,7 @@ export function OreLocationsClient({
                   <FindOreTab
                     allLocations={allLocations}
                     allOreTypes={allOreTypes}
+                    locationHierarchy={locationHierarchy}
                   />
                 </motion.div>
               </Tabs.Panel>
@@ -85,7 +89,7 @@ export function OreLocationsClient({
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <BrowseLocationsTab allLocations={allLocations} />
+                  <BrowseLocationsTab allLocations={allLocations} locationHierarchy={locationHierarchy} />
                 </motion.div>
               </Tabs.Panel>
             </Tabs>
@@ -101,6 +105,7 @@ export function OreLocationsClient({
             <OreLocationsPivotAdapter
               allLocations={allLocations}
               allOreTypes={allOreTypes}
+              locationHierarchy={locationHierarchy}
             />
           </motion.div>
         )}
@@ -116,9 +121,11 @@ export function OreLocationsClient({
 function FindOreTab({
   allLocations,
   allOreTypes,
+  locationHierarchy,
 }: {
   allLocations: OreLocationRow[];
   allOreTypes: string[];
+  locationHierarchy: LocationHierarchyData;
 }) {
   const [selectedOre, setSelectedOre] = useState<string>("");
   const [oreSearch, setOreSearch] = useState("");
@@ -293,9 +300,17 @@ function FindOreTab({
                       {(loc) => (
                         <Table.Row key={loc.location} id={loc.location}>
                           <Table.Cell>
-                            <span className="font-medium text-heading">
-                              {formatLocationName(loc.location)}
-                            </span>
+                            <LocationInfoPopover
+                              locationKey={loc.location}
+                              hierarchy={locationHierarchy}
+                            >
+                              <button
+                                type="button"
+                                className="font-medium text-heading underline-offset-2 hover:underline cursor-pointer"
+                              >
+                                {formatLocationName(loc.location)}
+                              </button>
+                            </LocationInfoPopover>
                           </Table.Cell>
                           <Table.Cell>
                             <span className="font-semibold text-accent">
@@ -333,8 +348,10 @@ function FindOreTab({
 
 function BrowseLocationsTab({
   allLocations,
+  locationHierarchy,
 }: {
   allLocations: OreLocationRow[];
+  locationHierarchy: LocationHierarchyData;
 }) {
   const [selectedLocation, setSelectedLocation] = useState<string>("");
   const [locationSearch, setLocationSearch] = useState("");
@@ -429,6 +446,7 @@ function BrowseLocationsTab({
                     locationKey={loc.location}
                     subtitle={`${formatNumber(loc.scans)} scans · ${formatNumber(loc.users)} users`}
                     onSelect={setSelectedLocation}
+                    meta={locationHierarchy[loc.location]}
                   />
                 ))}
               </div>
@@ -448,9 +466,17 @@ function BrowseLocationsTab({
               <Button variant="ghost" onPress={handleBack}>
                 &larr; Back to locations
               </Button>
-              <h2 className="text-lg font-semibold text-heading">
-                {formatLocationName(selectedLocation)}
-              </h2>
+              <LocationInfoPopover
+                locationKey={selectedLocation}
+                hierarchy={locationHierarchy}
+              >
+                <button
+                  type="button"
+                  className="text-lg font-semibold text-heading underline-offset-2 hover:underline cursor-pointer"
+                >
+                  {formatLocationName(selectedLocation)}
+                </button>
+              </LocationInfoPopover>
             </div>
 
             {location && (

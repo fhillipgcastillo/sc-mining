@@ -1,0 +1,50 @@
+{
+  "asteroid": {
+    "S": ["QTYPE"],
+    "A": ["ETYPE", "MTYPE"],
+    "B": ["PTYPE", "CTYPE", "ITYPE"],
+    "C": ["STYPE"]
+  },
+  "surface": {
+    "A": ["ATACAMITE", "FELSIC", "IGNEOUS", "OBSIDIAN"],
+    "B": ["GRANITE", "GNEISS", "QUARTZITE"],
+    "C": ["SHALE"]
+  },
+  "tierMeta": {
+    "S": {
+      "label": "S-Tier",
+      "description": "Highest value — guaranteed Quantanium",
+      "color": "warning"
+    },
+    "A": {
+      "label": "A-Tier",
+      "description": "High value ores (Bexalite, Taranite, Borase)",
+      "color": "primary"
+    },
+    "B": {
+      "label": "B-Tier",
+      "description": "Medium value, decent filler ores",
+      "color": "secondary"
+    },
+    "C": {
+      "label": "C-Tier",
+      "description": "Common low-value ores",
+      "color": "default"
+    }
+  },
+  "oreSpawnType": {
+    "asteroid": ["BORASE"],
+    "surface": ["TARANITE", "AGRICIUM"],
+    "both": [
+      "QUANTANIUM", "BEXALITE", "LARANITE", "HEPHAESTANITE",
+      "GOLD", "TITANIUM", "TUNGSTEN", "COPPER", "CORUNDUM",
+      "BERYL", "QUARTZ", "ALUMINIUM", "SILICON", "ICE",
+      "STILERON", "RICCITE", "LINDINIUM", "SAVRILIUM", "TORITE"
+    ],
+    "hand_mining": [
+      "HADANITE", "APHORITE", "DOLIVINE", "FEYNMALINE",
+      "GLACOSITE", "BERADOM", "JANALITE"
+    ],
+    "inert": ["INERTMATERIAL"]
+  }
+}

@@ -141,6 +141,53 @@ export interface HandMiningLocationRow extends HandMiningLocation {
 }
 
 // ---------------------------------------------------------------------------
+// Location hierarchy  (location-hierarchy.json)
+// ---------------------------------------------------------------------------
+
+/** The type of celestial or structural entity a location represents. */
+export type LocationType =
+  | 'planet'
+  | 'moon'
+  | 'lagrange'
+  | 'asteroid_belt'
+  | 'mining_outpost'
+  | 'mining_base'
+  | 'station';
+
+/** Whether ores at this location spawn as asteroids, on surfaces, or both. */
+export type SpawnType = 'asteroid' | 'surface' | 'both';
+
+/** Metadata for a single location in the hierarchy. */
+export interface LocationMeta {
+  system: string;
+  parent: string | null;
+  type: LocationType;
+  spawnType: SpawnType;
+  displayName: string;
+  children: string[];
+}
+
+/** Full location-hierarchy.json shape: location key → LocationMeta. */
+export type LocationHierarchyData = Record<string, LocationMeta>;
+
+// ---------------------------------------------------------------------------
+// Rock-type tiers  (rock-type-tiers.json)
+// ---------------------------------------------------------------------------
+
+/** Value tier for rock types. */
+export type RockTier = 'S' | 'A' | 'B' | 'C';
+
+/** Display metadata for a tier level. */
+export interface TierMeta {
+  label: string;
+  description: string;
+  color: string;
+}
+
+/** Where an ore can be found: asteroid belt, surface, both, hand-mining, or inert. */
+export type OreSpawnType = 'asteroid' | 'surface' | 'both' | 'hand_mining' | 'inert';
+
+// ---------------------------------------------------------------------------
 // Pivot table generics
 // ---------------------------------------------------------------------------
 

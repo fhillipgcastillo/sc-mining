@@ -59,7 +59,7 @@ export function PivotTableToolbar({
       </SearchField>
 
       {/* Column filter popover */}
-      <Popover placement="bottom start">
+      <Popover>
         <Popover.Trigger>
           <Button variant="ghost" size="sm">
             <svg
@@ -76,7 +76,7 @@ export function PivotTableToolbar({
             {columnFilterLabel} ({visibleColumns.size}/{totalColumns})
           </Button>
         </Popover.Trigger>
-        <Popover.Content className="w-64">
+        <Popover.Content placement="bottom start" className="w-64">
           <Popover.Dialog className="p-3">
             <div className="mb-2 flex items-center justify-between">
               <span className="text-xs font-semibold uppercase tracking-wider text-muted">

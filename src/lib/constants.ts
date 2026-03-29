@@ -123,6 +123,57 @@ export function formatLocationName(name: string): string {
     .join(' ');
 }
 
+// ---------------------------------------------------------------------------
+// Location type colors (HeroUI color variants)
+// ---------------------------------------------------------------------------
+
+export const LOCATION_TYPE_COLORS: Record<string, string> = {
+  planet: 'primary',
+  moon: 'secondary',
+  lagrange: 'warning',
+  asteroid_belt: 'danger',
+  mining_outpost: 'default',
+  mining_base: 'default',
+  station: 'default',
+};
+
+export const LOCATION_TYPE_LABELS: Record<string, string> = {
+  planet: 'Planet',
+  moon: 'Moon',
+  lagrange: 'Lagrange',
+  asteroid_belt: 'Belt',
+  mining_outpost: 'Outpost',
+  mining_base: 'Base',
+  station: 'Station',
+};
+
+// ---------------------------------------------------------------------------
+// Spawn type display
+// ---------------------------------------------------------------------------
+
+export const SPAWN_TYPE_COLORS: Record<string, string> = {
+  asteroid: 'warning',
+  surface: 'success',
+  both: 'primary',
+};
+
+export const SPAWN_TYPE_LABELS: Record<string, string> = {
+  asteroid: 'Asteroid',
+  surface: 'Surface',
+  both: 'Both',
+};
+
+// ---------------------------------------------------------------------------
+// Rock-type tier colors
+// ---------------------------------------------------------------------------
+
+export const TIER_COLORS: Record<string, string> = {
+  S: 'warning',
+  A: 'primary',
+  B: 'secondary',
+  C: 'default',
+};
+
 /**
  * Converts an ALL-CAPS ore or rock-type key to a display string.
  *

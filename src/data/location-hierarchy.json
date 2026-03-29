@@ -1,0 +1,1560 @@
+{
+  "AARON_HALO": {
+    "system": "STANTON",
+    "parent": null,
+    "type": "asteroid_belt",
+    "spawnType": "asteroid",
+    "displayName": "Aaron Halo",
+    "children": [
+      "RAB-ALPHA", "RAB-BRAVO", "RAB-CHARLIE", "RAB-COOK", "RAB-DELTA",
+      "RAB-ECHO", "RAB-FOXTROT", "RAB-GULF", "RAB-HELIO", "RAB-IGNITION",
+      "RAB-ION", "RAB-JAK", "RAB-KILO", "RAB-LAMDA", "RAB-LYNX",
+      "RAB-MAT", "RAB-NOVEMBER", "RAB-OVER", "RAB-POINT", "RAB-QUAGMIRE",
+      "RAB-ROTH", "RAB-SIERRA", "RAB-TUNG", "RAB-ULTRA", "RAB-VICTORY",
+      "RAB-WHISKEY", "RAB-XENO", "RAB-YORK", "RAB-ZETA",
+      "RMB-AXIL", "RMB-BORS", "RMB-BUCK", "RMB-CEDI", "RMB-CRUE",
+      "RMB-DARI", "RMB-DIRK", "RMB-DREG", "RMB-ELMS", "RMB-EVEN",
+      "RMB-FLAG", "RMB-GRAY", "RMB-GREX", "RMB-HARK", "RMB-HELM",
+      "RMB-HORN", "RMB-IKAN", "RMB-ION", "RMB-JADE", "RMB-JONG",
+      "RMB-KELT", "RMB-KIFF", "RMB-KNAP", "RMB-KYUS", "RMB-LANX",
+      "RMB-LAZO", "RMB-LOWN", "RMB-LUNE", "RMB-MARA", "RMB-MEFF",
+      "RMB-MOSK", "RMB-MUGG", "RMB-NAIN", "RMB-NARY", "RMB-NENE",
+      "RMB-NIGH", "RMB-ONER", "RMB-OXID", "RMB-PEKE", "RMB-PIZE",
+      "RMB-PLEX", "RMB-PURI", "RMB-QINS", "RMB-RAIK", "RMB-RAWN",
+      "RMB-RINE", "RMB-SEER", "RMB-SHEW", "RMB-SIJO", "RMB-SOWL",
+      "RMB-SURD", "RMB-TYRO", "RMB-UMUS", "RMB-VERD", "RMB-VOES",
+      "RMB-YEAD", "RMB-ZARF",
+      "ST-01K-I43", "ST-0YX-07Z", "ST-1XA-3GI", "ST-365-YNZ", "ST-4PI-3YY",
+      "ST-4R0-NVX", "ST-51F-OGH", "ST-5U5-TLC", "ST-6IN-PO2", "ST-74H-2DO",
+      "ST-7IQ-29Q", "ST-7LI-0OA", "ST-7YH-JX7", "ST-8CG-OSA", "ST-8PV-WNE",
+      "ST-A73-HTJ", "ST-AL5-XPD", "ST-BBR-4JQ", "ST-BRE-582", "ST-BSK-IJ5",
+      "ST-CVF-T6H", "ST-CZW-RRY", "ST-E38-S5G", "ST-G04-CH0", "ST-IGB-FXW",
+      "ST-IO3-H1F", "ST-JUG-0KZ", "ST-LBP-UN5", "ST-N6J-XKH", "ST-ODD-E9B",
+      "ST-OYV-JKE", "ST-Q4U-I20", "ST-Q9Q-090", "ST-QXS-NBS", "ST-R08-Y3K",
+      "ST-R75-5PZ", "ST-R7J-WJ7", "ST-RCD-0B3", "ST-RSV-8HL", "ST-SAG-2UN",
+      "ST-U5X-NGQ", "ST-UDK-IJX", "ST-URB-H3V", "ST-UU6-1EI", "ST-W79-2H7",
+      "ST-WUO-ZRU", "ST-X92-IVA", "ST-XJZ-JR2", "ST-YTO-GLQ", "ST-Z48-013",
+      "BGR-560", "DLO-486", "JWY-925", "KKE-717", "LHB-976", "NBD-102", "RSC-340"
+    ]
+  },
+  "HUR": {
+    "system": "STANTON",
+    "parent": null,
+    "type": "planet",
+    "spawnType": "surface",
+    "displayName": "Hurston",
+    "children": ["ABE", "ARI", "MAG", "ITA", "HUR-L1", "HUR-L2", "HUR-L3", "HUR-L4", "HUR-L5"]
+  },
+  "ABE": {
+    "system": "STANTON",
+    "parent": "HUR",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Aberdeen",
+    "children": []
+  },
+  "ARI": {
+    "system": "STANTON",
+    "parent": "HUR",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Arial",
+    "children": []
+  },
+  "MAG": {
+    "system": "STANTON",
+    "parent": "HUR",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Magda",
+    "children": []
+  },
+  "ITA": {
+    "system": "STANTON",
+    "parent": "HUR",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Ita",
+    "children": []
+  },
+  "HUR-L1": {
+    "system": "STANTON",
+    "parent": "HUR",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "HUR-L1",
+    "children": []
+  },
+  "HUR-L2": {
+    "system": "STANTON",
+    "parent": "HUR",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "HUR-L2",
+    "children": []
+  },
+  "HUR-L3": {
+    "system": "STANTON",
+    "parent": "HUR",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "HUR-L3",
+    "children": []
+  },
+  "HUR-L4": {
+    "system": "STANTON",
+    "parent": "HUR",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "HUR-L4",
+    "children": []
+  },
+  "HUR-L5": {
+    "system": "STANTON",
+    "parent": "HUR",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "HUR-L5",
+    "children": []
+  },
+  "LYR": {
+    "system": "STANTON",
+    "parent": "ARC",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Lyria",
+    "children": []
+  },
+  "WAL": {
+    "system": "STANTON",
+    "parent": "ARC",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Wala",
+    "children": []
+  },
+  "ARC-L1": {
+    "system": "STANTON",
+    "parent": "ARC",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "ARC-L1",
+    "children": []
+  },
+  "ARC-L2": {
+    "system": "STANTON",
+    "parent": "ARC",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "ARC-L2",
+    "children": []
+  },
+  "ARC-L3": {
+    "system": "STANTON",
+    "parent": "ARC",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "ARC-L3",
+    "children": []
+  },
+  "ARC-L4": {
+    "system": "STANTON",
+    "parent": "ARC",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "ARC-L4",
+    "children": []
+  },
+  "ARC-L5": {
+    "system": "STANTON",
+    "parent": "ARC",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "ARC-L5",
+    "children": []
+  },
+  "CEL": {
+    "system": "STANTON",
+    "parent": "CRU",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Cellin",
+    "children": []
+  },
+  "DAY": {
+    "system": "STANTON",
+    "parent": "CRU",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Daymar",
+    "children": []
+  },
+  "YEL": {
+    "system": "STANTON",
+    "parent": "CRU",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Yela",
+    "children": []
+  },
+  "YELB": {
+    "system": "STANTON",
+    "parent": "CRU",
+    "type": "asteroid_belt",
+    "spawnType": "asteroid",
+    "displayName": "Yela Belt",
+    "children": []
+  },
+  "CRU-L1": {
+    "system": "STANTON",
+    "parent": "CRU",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "CRU-L1",
+    "children": []
+  },
+  "CRU-L4": {
+    "system": "STANTON",
+    "parent": "CRU",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "CRU-L4",
+    "children": []
+  },
+  "MIC": {
+    "system": "STANTON",
+    "parent": null,
+    "type": "planet",
+    "spawnType": "surface",
+    "displayName": "microTech",
+    "children": ["CAL", "CLI", "EUT", "MIC-L1", "MIC-L2", "MIC-L3", "MIC-L4", "MIC-L5"]
+  },
+  "CAL": {
+    "system": "STANTON",
+    "parent": "MIC",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Calliope",
+    "children": []
+  },
+  "CLI": {
+    "system": "STANTON",
+    "parent": "MIC",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Clio",
+    "children": []
+  },
+  "EUT": {
+    "system": "STANTON",
+    "parent": "MIC",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Euterpe",
+    "children": []
+  },
+  "MIC-L1": {
+    "system": "STANTON",
+    "parent": "MIC",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "MIC-L1",
+    "children": []
+  },
+  "MIC-L2": {
+    "system": "STANTON",
+    "parent": "MIC",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "MIC-L2",
+    "children": []
+  },
+  "MIC-L3": {
+    "system": "STANTON",
+    "parent": "MIC",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "MIC-L3",
+    "children": []
+  },
+  "MIC-L4": {
+    "system": "STANTON",
+    "parent": "MIC",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "MIC-L4",
+    "children": []
+  },
+  "MIC-L5": {
+    "system": "STANTON",
+    "parent": "MIC",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "MIC-L5",
+    "children": []
+  },
+  "RAB-ALPHA": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-ALPHA",
+    "children": []
+  },
+  "RAB-BRAVO": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-BRAVO",
+    "children": []
+  },
+  "RAB-CHARLIE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-CHARLIE",
+    "children": []
+  },
+  "RAB-COOK": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-COOK",
+    "children": []
+  },
+  "RAB-DELTA": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-DELTA",
+    "children": []
+  },
+  "RAB-ECHO": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-ECHO",
+    "children": []
+  },
+  "RAB-FOXTROT": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-FOXTROT",
+    "children": []
+  },
+  "RAB-GULF": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-GULF",
+    "children": []
+  },
+  "RAB-HELIO": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-HELIO",
+    "children": []
+  },
+  "RAB-IGNITION": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-IGNITION",
+    "children": []
+  },
+  "RAB-ION": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-ION",
+    "children": []
+  },
+  "RAB-JAK": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-JAK",
+    "children": []
+  },
+  "RAB-KILO": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-KILO",
+    "children": []
+  },
+  "RAB-LAMDA": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-LAMDA",
+    "children": []
+  },
+  "RAB-LYNX": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-LYNX",
+    "children": []
+  },
+  "RAB-MAT": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-MAT",
+    "children": []
+  },
+  "RAB-NOVEMBER": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-NOVEMBER",
+    "children": []
+  },
+  "RAB-OVER": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-OVER",
+    "children": []
+  },
+  "RAB-POINT": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-POINT",
+    "children": []
+  },
+  "RAB-QUAGMIRE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-QUAGMIRE",
+    "children": []
+  },
+  "RAB-ROTH": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-ROTH",
+    "children": []
+  },
+  "RAB-SIERRA": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-SIERRA",
+    "children": []
+  },
+  "RAB-TUNG": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-TUNG",
+    "children": []
+  },
+  "RAB-ULTRA": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-ULTRA",
+    "children": []
+  },
+  "RAB-VICTORY": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-VICTORY",
+    "children": []
+  },
+  "RAB-WHISKEY": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-WHISKEY",
+    "children": []
+  },
+  "RAB-XENO": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-XENO",
+    "children": []
+  },
+  "RAB-YORK": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-YORK",
+    "children": []
+  },
+  "RAB-ZETA": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RAB-ZETA",
+    "children": []
+  },
+  "RMB-AXIL": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-AXIL",
+    "children": []
+  },
+  "RMB-BORS": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-BORS",
+    "children": []
+  },
+  "RMB-BUCK": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-BUCK",
+    "children": []
+  },
+  "RMB-CEDI": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-CEDI",
+    "children": []
+  },
+  "RMB-CRUE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-CRUE",
+    "children": []
+  },
+  "RMB-DARI": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-DARI",
+    "children": []
+  },
+  "RMB-DIRK": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-DIRK",
+    "children": []
+  },
+  "RMB-DREG": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-DREG",
+    "children": []
+  },
+  "RMB-ELMS": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-ELMS",
+    "children": []
+  },
+  "RMB-EVEN": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-EVEN",
+    "children": []
+  },
+  "RMB-FLAG": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-FLAG",
+    "children": []
+  },
+  "RMB-GRAY": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-GRAY",
+    "children": []
+  },
+  "RMB-GREX": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-GREX",
+    "children": []
+  },
+  "RMB-HARK": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-HARK",
+    "children": []
+  },
+  "RMB-HELM": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-HELM",
+    "children": []
+  },
+  "RMB-HORN": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-HORN",
+    "children": []
+  },
+  "RMB-IKAN": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-IKAN",
+    "children": []
+  },
+  "RMB-ION": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-ION",
+    "children": []
+  },
+  "RMB-JADE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-JADE",
+    "children": []
+  },
+  "RMB-JONG": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-JONG",
+    "children": []
+  },
+  "RMB-KELT": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-KELT",
+    "children": []
+  },
+  "RMB-KIFF": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-KIFF",
+    "children": []
+  },
+  "RMB-KNAP": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-KNAP",
+    "children": []
+  },
+  "RMB-KYUS": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-KYUS",
+    "children": []
+  },
+  "RMB-LANX": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-LANX",
+    "children": []
+  },
+  "RMB-LAZO": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-LAZO",
+    "children": []
+  },
+  "RMB-LOWN": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-LOWN",
+    "children": []
+  },
+  "RMB-LUNE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-LUNE",
+    "children": []
+  },
+  "RMB-MARA": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-MARA",
+    "children": []
+  },
+  "RMB-MEFF": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-MEFF",
+    "children": []
+  },
+  "RMB-MOSK": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-MOSK",
+    "children": []
+  },
+  "RMB-MUGG": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-MUGG",
+    "children": []
+  },
+  "RMB-NAIN": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-NAIN",
+    "children": []
+  },
+  "RMB-NARY": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-NARY",
+    "children": []
+  },
+  "RMB-NENE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-NENE",
+    "children": []
+  },
+  "RMB-NIGH": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-NIGH",
+    "children": []
+  },
+  "RMB-ONER": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-ONER",
+    "children": []
+  },
+  "RMB-OXID": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-OXID",
+    "children": []
+  },
+  "RMB-PEKE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-PEKE",
+    "children": []
+  },
+  "RMB-PIZE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-PIZE",
+    "children": []
+  },
+  "RMB-PLEX": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-PLEX",
+    "children": []
+  },
+  "RMB-PURI": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-PURI",
+    "children": []
+  },
+  "RMB-QINS": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-QINS",
+    "children": []
+  },
+  "RMB-RAIK": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-RAIK",
+    "children": []
+  },
+  "RMB-RAWN": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-RAWN",
+    "children": []
+  },
+  "RMB-RINE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-RINE",
+    "children": []
+  },
+  "RMB-SEER": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-SEER",
+    "children": []
+  },
+  "RMB-SHEW": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-SHEW",
+    "children": []
+  },
+  "RMB-SIJO": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-SIJO",
+    "children": []
+  },
+  "RMB-SOWL": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-SOWL",
+    "children": []
+  },
+  "RMB-SURD": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-SURD",
+    "children": []
+  },
+  "RMB-TYRO": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-TYRO",
+    "children": []
+  },
+  "RMB-UMUS": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-UMUS",
+    "children": []
+  },
+  "RMB-VERD": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-VERD",
+    "children": []
+  },
+  "RMB-VOES": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-VOES",
+    "children": []
+  },
+  "RMB-YEAD": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-YEAD",
+    "children": []
+  },
+  "RMB-ZARF": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_outpost",
+    "spawnType": "asteroid",
+    "displayName": "RMB-ZARF",
+    "children": []
+  },
+  "ST-01K-I43": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-01K-I43",
+    "children": []
+  },
+  "ST-0YX-07Z": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-0YX-07Z",
+    "children": []
+  },
+  "ST-1XA-3GI": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-1XA-3GI",
+    "children": []
+  },
+  "ST-365-YNZ": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-365-YNZ",
+    "children": []
+  },
+  "ST-4PI-3YY": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-4PI-3YY",
+    "children": []
+  },
+  "ST-4R0-NVX": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-4R0-NVX",
+    "children": []
+  },
+  "ST-51F-OGH": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-51F-OGH",
+    "children": []
+  },
+  "ST-5U5-TLC": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-5U5-TLC",
+    "children": []
+  },
+  "ST-6IN-PO2": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-6IN-PO2",
+    "children": []
+  },
+  "ST-74H-2DO": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-74H-2DO",
+    "children": []
+  },
+  "ST-7IQ-29Q": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-7IQ-29Q",
+    "children": []
+  },
+  "ST-7LI-0OA": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-7LI-0OA",
+    "children": []
+  },
+  "ST-7YH-JX7": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-7YH-JX7",
+    "children": []
+  },
+  "ST-8CG-OSA": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-8CG-OSA",
+    "children": []
+  },
+  "ST-8PV-WNE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-8PV-WNE",
+    "children": []
+  },
+  "ST-A73-HTJ": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-A73-HTJ",
+    "children": []
+  },
+  "ST-AL5-XPD": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-AL5-XPD",
+    "children": []
+  },
+  "ST-BBR-4JQ": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-BBR-4JQ",
+    "children": []
+  },
+  "ST-BRE-582": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-BRE-582",
+    "children": []
+  },
+  "ST-BSK-IJ5": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-BSK-IJ5",
+    "children": []
+  },
+  "ST-CVF-T6H": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-CVF-T6H",
+    "children": []
+  },
+  "ST-CZW-RRY": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-CZW-RRY",
+    "children": []
+  },
+  "ST-E38-S5G": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-E38-S5G",
+    "children": []
+  },
+  "ST-G04-CH0": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-G04-CH0",
+    "children": []
+  },
+  "ST-IGB-FXW": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-IGB-FXW",
+    "children": []
+  },
+  "ST-IO3-H1F": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-IO3-H1F",
+    "children": []
+  },
+  "ST-JUG-0KZ": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-JUG-0KZ",
+    "children": []
+  },
+  "ST-LBP-UN5": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-LBP-UN5",
+    "children": []
+  },
+  "ST-N6J-XKH": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-N6J-XKH",
+    "children": []
+  },
+  "ST-ODD-E9B": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-ODD-E9B",
+    "children": []
+  },
+  "ST-OYV-JKE": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-OYV-JKE",
+    "children": []
+  },
+  "ST-Q4U-I20": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-Q4U-I20",
+    "children": []
+  },
+  "ST-Q9Q-090": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-Q9Q-090",
+    "children": []
+  },
+  "ST-QXS-NBS": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-QXS-NBS",
+    "children": []
+  },
+  "ST-R08-Y3K": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-R08-Y3K",
+    "children": []
+  },
+  "ST-R75-5PZ": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-R75-5PZ",
+    "children": []
+  },
+  "ST-R7J-WJ7": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-R7J-WJ7",
+    "children": []
+  },
+  "ST-RCD-0B3": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-RCD-0B3",
+    "children": []
+  },
+  "ST-RSV-8HL": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-RSV-8HL",
+    "children": []
+  },
+  "ST-SAG-2UN": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-SAG-2UN",
+    "children": []
+  },
+  "ST-U5X-NGQ": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-U5X-NGQ",
+    "children": []
+  },
+  "ST-UDK-IJX": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-UDK-IJX",
+    "children": []
+  },
+  "ST-URB-H3V": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-URB-H3V",
+    "children": []
+  },
+  "ST-UU6-1EI": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-UU6-1EI",
+    "children": []
+  },
+  "ST-W79-2H7": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-W79-2H7",
+    "children": []
+  },
+  "ST-WUO-ZRU": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-WUO-ZRU",
+    "children": []
+  },
+  "ST-X92-IVA": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-X92-IVA",
+    "children": []
+  },
+  "ST-XJZ-JR2": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-XJZ-JR2",
+    "children": []
+  },
+  "ST-YTO-GLQ": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-YTO-GLQ",
+    "children": []
+  },
+  "ST-Z48-013": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "station",
+    "spawnType": "asteroid",
+    "displayName": "ST-Z48-013",
+    "children": []
+  },
+  "BGR-560": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_base",
+    "spawnType": "asteroid",
+    "displayName": "BGR-560",
+    "children": []
+  },
+  "DLO-486": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_base",
+    "spawnType": "asteroid",
+    "displayName": "DLO-486",
+    "children": []
+  },
+  "JWY-925": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_base",
+    "spawnType": "asteroid",
+    "displayName": "JWY-925",
+    "children": []
+  },
+  "KKE-717": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_base",
+    "spawnType": "asteroid",
+    "displayName": "KKE-717",
+    "children": []
+  },
+  "LHB-976": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_base",
+    "spawnType": "asteroid",
+    "displayName": "LHB-976",
+    "children": []
+  },
+  "NBD-102": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_base",
+    "spawnType": "asteroid",
+    "displayName": "NBD-102",
+    "children": []
+  },
+  "RSC-340": {
+    "system": "STANTON",
+    "parent": "AARON_HALO",
+    "type": "mining_base",
+    "spawnType": "asteroid",
+    "displayName": "RSC-340",
+    "children": []
+  },
+  "PY1": {
+    "system": "PYRO",
+    "parent": null,
+    "type": "planet",
+    "spawnType": "surface",
+    "displayName": "Pyro I",
+    "children": []
+  },
+  "MON": {
+    "system": "PYRO",
+    "parent": null,
+    "type": "planet",
+    "spawnType": "surface",
+    "displayName": "Monox",
+    "children": ["PYR2L4"]
+  },
+  "BLO": {
+    "system": "PYRO",
+    "parent": null,
+    "type": "planet",
+    "spawnType": "surface",
+    "displayName": "Bloom",
+    "children": []
+  },
+  "PY4": {
+    "system": "PYRO",
+    "parent": null,
+    "type": "planet",
+    "spawnType": "surface",
+    "displayName": "Pyro IV",
+    "children": ["PY4_BELT"]
+  },
+  "TER": {
+    "system": "PYRO",
+    "parent": null,
+    "type": "planet",
+    "spawnType": "surface",
+    "displayName": "Terminus",
+    "children": ["TER_BELT"]
+  },
+  "IGN": {
+    "system": "PYRO",
+    "parent": "PY5",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Ignis",
+    "children": []
+  },
+  "VAT": {
+    "system": "PYRO",
+    "parent": "PY5",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Vatra",
+    "children": []
+  },
+  "ADI": {
+    "system": "PYRO",
+    "parent": "PY5",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Adir",
+    "children": []
+  },
+  "FAI": {
+    "system": "PYRO",
+    "parent": "PY5",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Fairo",
+    "children": []
+  },
+  "FUE": {
+    "system": "PYRO",
+    "parent": "PY5",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Fuego",
+    "children": []
+  },
+  "VUU": {
+    "system": "PYRO",
+    "parent": "PY5",
+    "type": "moon",
+    "spawnType": "surface",
+    "displayName": "Vuur",
+    "children": []
+  },
+  "PY4_BELT": {
+    "system": "PYRO",
+    "parent": "PY4",
+    "type": "asteroid_belt",
+    "spawnType": "asteroid",
+    "displayName": "Pyro IV Belt",
+    "children": []
+  },
+  "TER_BELT": {
+    "system": "PYRO",
+    "parent": "TER",
+    "type": "asteroid_belt",
+    "spawnType": "asteroid",
+    "displayName": "Terminus Belt",
+    "children": []
+  },
+  "PYR2L4": {
+    "system": "PYRO",
+    "parent": "MON",
+    "type": "lagrange",
+    "spawnType": "asteroid",
+    "displayName": "Pyro II L4",
+    "children": []
+  },
+  "GLACIUM": {
+    "system": "NYX",
+    "parent": null,
+    "type": "asteroid_belt",
+    "spawnType": "asteroid",
+    "displayName": "Glaciem Ring",
+    "children": []
+  }
+}

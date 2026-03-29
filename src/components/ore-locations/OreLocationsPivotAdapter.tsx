@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useCallback } from "react";
-import type { OreLocationRow, OreEntry, PivotRow, PivotColumn } from "@/types";
-import { formatLocationName, formatOreName, getOreColor } from "@/lib/constants";
+import type { OreLocationRow, OreEntry, PivotRow, PivotColumn, LocationHierarchyData } from "@/types";
+import { formatLocationName, formatOreName, getOreColor, LOCATION_TYPE_LABELS, SPAWN_TYPE_LABELS } from "@/lib/constants";
 import { formatProbability, formatPercent, formatNumber } from "@/lib/formatting";
 import { OreChip } from "@/components/shared/OreChip";
 import { PivotTable } from "@/components/shared/pivot-table/PivotTable";
@@ -10,6 +10,7 @@ import { PivotTable } from "@/components/shared/pivot-table/PivotTable";
 interface OreLocationsPivotAdapterProps {
   allLocations: OreLocationRow[];
   allOreTypes: string[];
+  locationHierarchy: LocationHierarchyData;
 }
 
 const getProbability = (entry: OreEntry) => entry.prob;
@@ -18,6 +19,7 @@ const formatCellValue = (entry: OreEntry) => formatProbability(entry.prob);
 export function OreLocationsPivotAdapter({
   allLocations,
   allOreTypes,
+  locationHierarchy,
 }: OreLocationsPivotAdapterProps) {
   const rows: PivotRow<OreEntry>[] = useMemo(
     () =>
@@ -57,6 +59,7 @@ export function OreLocationsPivotAdapter({
       entry: OreEntry,
     ) => {
       const loc = locationMap.get(rowId);
+      const meta = locationHierarchy[rowId];
       return (
         <div className="space-y-2 text-xs">
           <div className="flex items-center gap-2">
@@ -64,6 +67,15 @@ export function OreLocationsPivotAdapter({
             <span className="text-muted">at</span>
             <span className="font-medium text-heading">{rowLabel}</span>
           </div>
+          {meta && (
+            <div className="flex items-center gap-2 text-muted">
+              <span>{LOCATION_TYPE_LABELS[meta.type] ?? meta.type}</span>
+              <span>&middot;</span>
+              <span>{SPAWN_TYPE_LABELS[meta.spawnType] ?? meta.spawnType}</span>
+              <span>&middot;</span>
+              <span>{meta.system.charAt(0) + meta.system.slice(1).toLowerCase()}</span>
+            </div>
+          )}
           <div className="grid grid-cols-2 gap-x-4 gap-y-0.5">
             <span className="text-muted">Probability</span>
             <span className="font-semibold text-accent">
@@ -89,7 +101,7 @@ export function OreLocationsPivotAdapter({
         </div>
       );
     },
-    [locationMap],
+    [locationMap, locationHierarchy],
   );
 
   return (

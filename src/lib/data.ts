@@ -11,6 +11,8 @@ import oreLocationsRaw from '@/data/ore-locations.json';
 import rockTypeLocationsRaw from '@/data/rock-type-locations.json';
 import rockTypesRaw from '@/data/rock-types.json';
 import handMiningRaw from '@/data/hand-mining.json';
+import locationHierarchyRaw from '@/data/location-hierarchy.json';
+import rockTypeTiersRaw from '@/data/rock-type-tiers.json';
 
 import type {
   OreLocationsData,
@@ -21,6 +23,11 @@ import type {
   RockTypeSystemRow,
   HandMiningData,
   HandMiningLocationRow,
+  LocationHierarchyData,
+  LocationMeta,
+  RockTier,
+  TierMeta,
+  OreSpawnType,
 } from '@/types';
 
 // ---------------------------------------------------------------------------
@@ -32,6 +39,13 @@ const oreLocations = oreLocationsRaw as unknown as OreLocationsData;
 const rockTypeLocations = rockTypeLocationsRaw as unknown as RockTypeLocationsData;
 const rockTypes = rockTypesRaw as unknown as RockTypesData;
 const handMining = handMiningRaw as unknown as HandMiningData;
+const locationHierarchy = locationHierarchyRaw as unknown as LocationHierarchyData;
+const rockTypeTiers = rockTypeTiersRaw as unknown as {
+  asteroid: Record<string, string[]>;
+  surface: Record<string, string[]>;
+  tierMeta: Record<string, TierMeta>;
+  oreSpawnType: Record<string, string[]>;
+};
 
 // ---------------------------------------------------------------------------
 // Ore Locations
@@ -183,4 +197,62 @@ export function getAllHandMiningOres(): string[] {
     Object.keys(loc.ores).forEach((ore) => names.add(ore)),
   );
   return [...names].sort();
+}
+
+// ---------------------------------------------------------------------------
+// Location Hierarchy
+// ---------------------------------------------------------------------------
+
+/** Returns the full location hierarchy lookup map. */
+export function getLocationHierarchy(): LocationHierarchyData {
+  return locationHierarchy;
+}
+
+/** Returns metadata for a single location, or undefined if not in hierarchy. */
+export function getLocationMeta(locationKey: string): LocationMeta | undefined {
+  return locationHierarchy[locationKey];
+}
+
+/**
+ * Returns sibling locations — other children of the same parent, excluding
+ * the given key itself. Returns an empty array for root-level locations.
+ */
+export function getSiblingLocations(locationKey: string): string[] {
+  const meta = locationHierarchy[locationKey];
+  if (!meta?.parent) return [];
+  const parentMeta = locationHierarchy[meta.parent];
+  if (!parentMeta) return [];
+  return parentMeta.children.filter((k) => k !== locationKey);
+}
+
+// ---------------------------------------------------------------------------
+// Rock-Type Tiers
+// ---------------------------------------------------------------------------
+
+/**
+ * Returns the tier (S/A/B/C) for a given rock type, checking both asteroid
+ * and surface tier maps. Returns null for unknown rock types.
+ */
+export function getRockTypeTier(rockType: string): RockTier | null {
+  const upper = rockType.toUpperCase();
+  for (const tierMap of [rockTypeTiers.asteroid, rockTypeTiers.surface]) {
+    for (const [tier, types] of Object.entries(tierMap)) {
+      if (types.includes(upper)) return tier as RockTier;
+    }
+  }
+  return null;
+}
+
+/** Returns display metadata for a given tier level. */
+export function getTierMeta(tier: RockTier): TierMeta {
+  return rockTypeTiers.tierMeta[tier];
+}
+
+/** Returns where a given ore spawns: asteroid, surface, both, hand_mining, or inert. */
+export function getOreSpawnType(oreName: string): OreSpawnType {
+  const upper = oreName.toUpperCase();
+  for (const [spawnType, ores] of Object.entries(rockTypeTiers.oreSpawnType)) {
+    if (ores.includes(upper)) return spawnType as OreSpawnType;
+  }
+  return 'both';
 }
