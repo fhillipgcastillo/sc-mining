@@ -12,7 +12,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { OreLocationRow } from "@/types";
 import { formatLocationName, formatOreName } from "@/lib/constants";
 import { formatProbability, formatPercent, formatNumber } from "@/lib/formatting";
+import { useSort } from "@/hooks/useSort";
+import type { SortAccessorMap } from "@/hooks/useSort";
 import { OreChip } from "@/components/shared/OreChip";
+import { SortIndicator } from "@/components/shared/SortIndicator";
 import { StatsCard } from "@/components/shared/StatsCard";
 import { ItemCard } from "@/components/shared/ItemCard";
 import { LocationCard } from "@/components/shared/LocationCard";
@@ -104,22 +107,36 @@ function FindOreTab({
 
   const filteredLocations = useMemo(() => {
     if (!selectedOre) return [];
-    return allLocations
-      .filter((loc) => {
-        const hasOre = selectedOre in loc.ores;
-        if (!hasOre) return false;
-        if (debouncedLocationSearch) {
-          return formatLocationName(loc.location)
-            .toLowerCase()
-            .includes(debouncedLocationSearch.toLowerCase());
-        }
-        return true;
-      })
-      .sort(
-        (a, b) =>
-          (b.ores[selectedOre]?.prob ?? 0) - (a.ores[selectedOre]?.prob ?? 0)
-      );
+    return allLocations.filter((loc) => {
+      const hasOre = selectedOre in loc.ores;
+      if (!hasOre) return false;
+      if (debouncedLocationSearch) {
+        return formatLocationName(loc.location)
+          .toLowerCase()
+          .includes(debouncedLocationSearch.toLowerCase());
+      }
+      return true;
+    });
   }, [allLocations, selectedOre, debouncedLocationSearch]);
+
+  const sortColumns = useMemo<SortAccessorMap<OreLocationRow>>(
+    () => ({
+      location: (loc) => formatLocationName(loc.location),
+      prob: (loc) => loc.ores[selectedOre]?.prob ?? 0,
+      minPct: (loc) => loc.ores[selectedOre]?.minPct ?? 0,
+      medPct: (loc) => loc.ores[selectedOre]?.medPct ?? 0,
+      maxPct: (loc) => loc.ores[selectedOre]?.maxPct ?? 0,
+      scans: (loc) => loc.scans,
+      users: (loc) => loc.users,
+    }),
+    [selectedOre]
+  );
+
+  const { sortedData, sortDescriptor, onSortChange } = useSort({
+    data: filteredLocations,
+    columns: sortColumns,
+    defaultSort: { column: "prob", direction: "descending" },
+  });
 
   function handleBack() {
     setSelectedOre("");
@@ -202,7 +219,7 @@ function FindOreTab({
             </SearchField>
 
             {/* Results table */}
-            {filteredLocations.length === 0 ? (
+            {sortedData.length === 0 ? (
               <p className="py-12 text-center text-muted-deeper">
                 No locations found for {formatOreName(selectedOre)}
                 {debouncedLocationSearch
@@ -215,17 +232,34 @@ function FindOreTab({
                 <Table
                   aria-label={`Locations for ${formatOreName(selectedOre)}`}
                 >
-                  <Table.Content>
+                  <Table.Content
+                    sortDescriptor={sortDescriptor}
+                    onSortChange={onSortChange}
+                  >
                     <Table.Header>
-                      <Table.Column isRowHeader>Location</Table.Column>
-                      <Table.Column>Probability</Table.Column>
-                      <Table.Column>Min %</Table.Column>
-                      <Table.Column>Median %</Table.Column>
-                      <Table.Column>Max %</Table.Column>
-                      <Table.Column>Scans</Table.Column>
-                      <Table.Column>Users</Table.Column>
+                      <Table.Column id="location" isRowHeader allowsSorting>
+                        {({ sortDirection }) => (<>Location<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="prob" allowsSorting>
+                        {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="minPct" allowsSorting>
+                        {({ sortDirection }) => (<>Min %<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="medPct" allowsSorting>
+                        {({ sortDirection }) => (<>Median %<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="maxPct" allowsSorting>
+                        {({ sortDirection }) => (<>Max %<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="scans" allowsSorting>
+                        {({ sortDirection }) => (<>Scans<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="users" allowsSorting>
+                        {({ sortDirection }) => (<>Users<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
                     </Table.Header>
-                    <Table.Body items={filteredLocations}>
+                    <Table.Body items={sortedData}>
                       {(loc) => (
                         <Table.Row key={loc.location} id={loc.location}>
                           <Table.Cell>
@@ -297,12 +331,25 @@ function BrowseLocationsTab({
     [allLocations, selectedLocation]
   );
 
-  const sortedOres = useMemo(() => {
+  const oreRows = useMemo(() => {
     if (!location) return [];
-    return Object.entries(location.ores)
-      .map(([name, entry]) => ({ name, ...entry }))
-      .sort((a, b) => b.prob - a.prob);
+    return Object.entries(location.ores).map(([name, entry]) => ({
+      name,
+      ...entry,
+    }));
   }, [location]);
+
+  const { sortedData: sortedOres, sortDescriptor: oreSortDescriptor, onSortChange: onOreSortChange } = useSort({
+    data: oreRows,
+    columns: {
+      name: "name" as const,
+      prob: "prob" as const,
+      minPct: "minPct" as const,
+      medPct: "medPct" as const,
+      maxPct: "maxPct" as const,
+    },
+    defaultSort: { column: "prob", direction: "descending" },
+  });
 
   function handleBack() {
     setSelectedLocation("");
@@ -410,13 +457,26 @@ function BrowseLocationsTab({
                   <Table
                     aria-label={`Ores at ${formatLocationName(selectedLocation)}`}
                   >
-                    <Table.Content>
+                    <Table.Content
+                      sortDescriptor={oreSortDescriptor}
+                      onSortChange={onOreSortChange}
+                    >
                       <Table.Header>
-                        <Table.Column isRowHeader>Ore</Table.Column>
-                        <Table.Column>Probability</Table.Column>
-                        <Table.Column>Min %</Table.Column>
-                        <Table.Column>Median %</Table.Column>
-                        <Table.Column>Max %</Table.Column>
+                        <Table.Column id="name" isRowHeader allowsSorting>
+                          {({ sortDirection }) => (<>Ore<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
+                        <Table.Column id="prob" allowsSorting>
+                          {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
+                        <Table.Column id="minPct" allowsSorting>
+                          {({ sortDirection }) => (<>Min %<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
+                        <Table.Column id="medPct" allowsSorting>
+                          {({ sortDirection }) => (<>Median %<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
+                        <Table.Column id="maxPct" allowsSorting>
+                          {({ sortDirection }) => (<>Max %<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
                       </Table.Header>
                       <Table.Body items={sortedOres}>
                         {(ore) => (

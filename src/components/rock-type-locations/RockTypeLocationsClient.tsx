@@ -12,7 +12,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { RockTypeLocationRow } from "@/types";
 import { formatLocationName, formatOreName } from "@/lib/constants";
 import { formatProbability, formatNumber, formatStat } from "@/lib/formatting";
+import { useSort } from "@/hooks/useSort";
+import type { SortAccessorMap } from "@/hooks/useSort";
 import { OreChip } from "@/components/shared/OreChip";
+import { SortIndicator } from "@/components/shared/SortIndicator";
 import { ItemCard } from "@/components/shared/ItemCard";
 import { LocationCard } from "@/components/shared/LocationCard";
 
@@ -103,23 +106,36 @@ function FindRockTypeTab({
 
   const filteredLocations = useMemo(() => {
     if (!selectedRockType) return [];
-    return allLocations
-      .filter((loc) => {
-        const hasType = selectedRockType in loc.rockTypes;
-        if (!hasType) return false;
-        if (debouncedLocationSearch) {
-          return formatLocationName(loc.location)
-            .toLowerCase()
-            .includes(debouncedLocationSearch.toLowerCase());
-        }
-        return true;
-      })
-      .sort(
-        (a, b) =>
-          (b.rockTypes[selectedRockType]?.prob ?? 0) -
-          (a.rockTypes[selectedRockType]?.prob ?? 0)
-      );
+    return allLocations.filter((loc) => {
+      const hasType = selectedRockType in loc.rockTypes;
+      if (!hasType) return false;
+      if (debouncedLocationSearch) {
+        return formatLocationName(loc.location)
+          .toLowerCase()
+          .includes(debouncedLocationSearch.toLowerCase());
+      }
+      return true;
+    });
   }, [allLocations, selectedRockType, debouncedLocationSearch]);
+
+  const sortColumns = useMemo<SortAccessorMap<RockTypeLocationRow>>(
+    () => ({
+      location: (loc) => formatLocationName(loc.location),
+      prob: (loc) => loc.rockTypes[selectedRockType]?.prob ?? 0,
+      scans: (loc) => loc.rockTypes[selectedRockType]?.scans ?? 0,
+      clusters: (loc) => loc.rockTypes[selectedRockType]?.clusters ?? 0,
+      massMed: (loc) => loc.rockTypes[selectedRockType]?.mass.med ?? 0,
+      instMed: (loc) => loc.rockTypes[selectedRockType]?.inst.med ?? 0,
+      resMed: (loc) => loc.rockTypes[selectedRockType]?.res.med ?? 0,
+    }),
+    [selectedRockType]
+  );
+
+  const { sortedData, sortDescriptor, onSortChange } = useSort({
+    data: filteredLocations,
+    columns: sortColumns,
+    defaultSort: { column: "prob", direction: "descending" },
+  });
 
   function handleBack() {
     setSelectedRockType("");
@@ -202,7 +218,7 @@ function FindRockTypeTab({
             </SearchField>
 
             {/* Results table */}
-            {filteredLocations.length === 0 ? (
+            {sortedData.length === 0 ? (
               <p className="py-12 text-center text-muted-deeper">
                 No locations found for {formatOreName(selectedRockType)}
                 {debouncedLocationSearch
@@ -215,17 +231,34 @@ function FindRockTypeTab({
                 <Table
                   aria-label={`Locations for ${formatOreName(selectedRockType)}`}
                 >
-                  <Table.Content>
+                  <Table.Content
+                    sortDescriptor={sortDescriptor}
+                    onSortChange={onSortChange}
+                  >
                     <Table.Header>
-                      <Table.Column isRowHeader>Location</Table.Column>
-                      <Table.Column>Probability</Table.Column>
-                      <Table.Column>Scans</Table.Column>
-                      <Table.Column>Clusters</Table.Column>
-                      <Table.Column>Mass (med)</Table.Column>
-                      <Table.Column>Instability (med)</Table.Column>
-                      <Table.Column>Resistance (med)</Table.Column>
+                      <Table.Column id="location" isRowHeader allowsSorting>
+                        {({ sortDirection }) => (<>Location<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="prob" allowsSorting>
+                        {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="scans" allowsSorting>
+                        {({ sortDirection }) => (<>Scans<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="clusters" allowsSorting>
+                        {({ sortDirection }) => (<>Clusters<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="massMed" allowsSorting>
+                        {({ sortDirection }) => (<>Mass (med)<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="instMed" allowsSorting>
+                        {({ sortDirection }) => (<>Instability (med)<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
+                      <Table.Column id="resMed" allowsSorting>
+                        {({ sortDirection }) => (<>Resistance (med)<SortIndicator direction={sortDirection} /></>)}
+                      </Table.Column>
                     </Table.Header>
-                    <Table.Body items={filteredLocations}>
+                    <Table.Body items={sortedData}>
                       {(loc) => {
                         const entry = loc.rockTypes[selectedRockType];
                         return (
@@ -294,12 +327,27 @@ function BrowseLocationsTab({
     [allLocations, selectedLocation]
   );
 
-  const sortedRockTypes = useMemo(() => {
+  const rockTypeRows = useMemo(() => {
     if (!location) return [];
-    return Object.entries(location.rockTypes)
-      .map(([name, entry]) => ({ name, ...entry }))
-      .sort((a, b) => b.prob - a.prob);
+    return Object.entries(location.rockTypes).map(([name, entry]) => ({
+      name,
+      ...entry,
+    }));
   }, [location]);
+
+  const { sortedData: sortedRockTypes, sortDescriptor: rtSortDescriptor, onSortChange: onRtSortChange } = useSort({
+    data: rockTypeRows,
+    columns: {
+      name: "name" as const,
+      prob: "prob" as const,
+      scans: "scans" as const,
+      clusters: "clusters" as const,
+      massMed: (rt) => rt.mass.med,
+      instMed: (rt) => rt.inst.med,
+      resMed: (rt) => rt.res.med,
+    },
+    defaultSort: { column: "prob", direction: "descending" },
+  });
 
   function handleBack() {
     setSelectedLocation("");
@@ -397,15 +445,32 @@ function BrowseLocationsTab({
                   <Table
                     aria-label={`Rock types at ${formatLocationName(selectedLocation)}`}
                   >
-                    <Table.Content>
+                    <Table.Content
+                      sortDescriptor={rtSortDescriptor}
+                      onSortChange={onRtSortChange}
+                    >
                       <Table.Header>
-                        <Table.Column isRowHeader>Rock Type</Table.Column>
-                        <Table.Column>Probability</Table.Column>
-                        <Table.Column>Scans</Table.Column>
-                        <Table.Column>Clusters</Table.Column>
-                        <Table.Column>Mass (med)</Table.Column>
-                        <Table.Column>Instability (med)</Table.Column>
-                        <Table.Column>Resistance (med)</Table.Column>
+                        <Table.Column id="name" isRowHeader allowsSorting>
+                          {({ sortDirection }) => (<>Rock Type<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
+                        <Table.Column id="prob" allowsSorting>
+                          {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
+                        <Table.Column id="scans" allowsSorting>
+                          {({ sortDirection }) => (<>Scans<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
+                        <Table.Column id="clusters" allowsSorting>
+                          {({ sortDirection }) => (<>Clusters<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
+                        <Table.Column id="massMed" allowsSorting>
+                          {({ sortDirection }) => (<>Mass (med)<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
+                        <Table.Column id="instMed" allowsSorting>
+                          {({ sortDirection }) => (<>Instability (med)<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
+                        <Table.Column id="resMed" allowsSorting>
+                          {({ sortDirection }) => (<>Resistance (med)<SortIndicator direction={sortDirection} /></>)}
+                        </Table.Column>
                       </Table.Header>
                       <Table.Body items={sortedRockTypes}>
                         {(rt) => (
