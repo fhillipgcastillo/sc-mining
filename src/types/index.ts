@@ -139,3 +139,27 @@ export type HandMiningData = Record<string, HandMiningLocation>;
 export interface HandMiningLocationRow extends HandMiningLocation {
   location: string;
 }
+
+// ---------------------------------------------------------------------------
+// Pivot table generics
+// ---------------------------------------------------------------------------
+
+/** A single row in the pivot table grid (one per location). */
+export interface PivotRow<TEntry> {
+  id: string;
+  label: string;
+  entries: Record<string, TEntry>;
+}
+
+/** A single column in the pivot table grid (one per ore/rock type). */
+export interface PivotColumn {
+  id: string;
+  label: string;
+  colorVariant: string;
+}
+
+/** Sort state for the pivot table. */
+export interface PivotSort {
+  columnId: string | null;
+  direction: "asc" | "desc";
+}
