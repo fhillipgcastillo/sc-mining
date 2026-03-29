@@ -15,7 +15,7 @@ import { formatProbability, formatNumber, formatStat } from "@/lib/formatting";
 import { useSort } from "@/hooks/useSort";
 import type { SortAccessorMap } from "@/hooks/useSort";
 import { OreChip } from "@/components/shared/OreChip";
-import { SortIndicator } from "@/components/shared/SortIndicator";
+import { SortableHeader } from "@/components/shared/SortableHeader";
 import { ItemCard } from "@/components/shared/ItemCard";
 import { LocationCard } from "@/components/shared/LocationCard";
 
@@ -231,31 +231,28 @@ function FindRockTypeTab({
                 <Table
                   aria-label={`Locations for ${formatOreName(selectedRockType)}`}
                 >
-                  <Table.Content
-                    sortDescriptor={sortDescriptor}
-                    onSortChange={onSortChange}
-                  >
+                  <Table.Content>
                     <Table.Header>
-                      <Table.Column id="location" isRowHeader allowsSorting>
-                        {({ sortDirection }) => (<>Location<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column isRowHeader>
+                        <SortableHeader columnId="location" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Location</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="prob" allowsSorting>
-                        {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="prob" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Probability</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="scans" allowsSorting>
-                        {({ sortDirection }) => (<>Scans<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="scans" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Scans</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="clusters" allowsSorting>
-                        {({ sortDirection }) => (<>Clusters<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="clusters" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Clusters</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="massMed" allowsSorting>
-                        {({ sortDirection }) => (<>Mass (med)<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="massMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Mass (med)</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="instMed" allowsSorting>
-                        {({ sortDirection }) => (<>Instability (med)<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="instMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Instability (med)</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="resMed" allowsSorting>
-                        {({ sortDirection }) => (<>Resistance (med)<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="resMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Resistance (med)</SortableHeader>
                       </Table.Column>
                     </Table.Header>
                     <Table.Body items={sortedData}>
@@ -335,17 +332,22 @@ function BrowseLocationsTab({
     }));
   }, [location]);
 
-  const { sortedData: sortedRockTypes, sortDescriptor: rtSortDescriptor, onSortChange: onRtSortChange } = useSort({
-    data: rockTypeRows,
-    columns: {
+  const rtSortColumns = useMemo(
+    () => ({
       name: "name" as const,
       prob: "prob" as const,
       scans: "scans" as const,
       clusters: "clusters" as const,
-      massMed: (rt) => rt.mass.med,
-      instMed: (rt) => rt.inst.med,
-      resMed: (rt) => rt.res.med,
-    },
+      massMed: (rt: { mass: { med: number } }) => rt.mass.med,
+      instMed: (rt: { inst: { med: number } }) => rt.inst.med,
+      resMed: (rt: { res: { med: number } }) => rt.res.med,
+    }),
+    []
+  );
+
+  const { sortedData: sortedRockTypes, sortDescriptor: rtSortDescriptor, onSortChange: onRtSortChange } = useSort({
+    data: rockTypeRows,
+    columns: rtSortColumns,
     defaultSort: { column: "prob", direction: "descending" },
   });
 
@@ -445,31 +447,28 @@ function BrowseLocationsTab({
                   <Table
                     aria-label={`Rock types at ${formatLocationName(selectedLocation)}`}
                   >
-                    <Table.Content
-                      sortDescriptor={rtSortDescriptor}
-                      onSortChange={onRtSortChange}
-                    >
+                    <Table.Content>
                       <Table.Header>
-                        <Table.Column id="name" isRowHeader allowsSorting>
-                          {({ sortDirection }) => (<>Rock Type<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column isRowHeader>
+                          <SortableHeader columnId="name" sortDescriptor={rtSortDescriptor} onSortChange={onRtSortChange}>Rock Type</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="prob" allowsSorting>
-                          {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="prob" sortDescriptor={rtSortDescriptor} onSortChange={onRtSortChange}>Probability</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="scans" allowsSorting>
-                          {({ sortDirection }) => (<>Scans<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="scans" sortDescriptor={rtSortDescriptor} onSortChange={onRtSortChange}>Scans</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="clusters" allowsSorting>
-                          {({ sortDirection }) => (<>Clusters<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="clusters" sortDescriptor={rtSortDescriptor} onSortChange={onRtSortChange}>Clusters</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="massMed" allowsSorting>
-                          {({ sortDirection }) => (<>Mass (med)<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="massMed" sortDescriptor={rtSortDescriptor} onSortChange={onRtSortChange}>Mass (med)</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="instMed" allowsSorting>
-                          {({ sortDirection }) => (<>Instability (med)<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="instMed" sortDescriptor={rtSortDescriptor} onSortChange={onRtSortChange}>Instability (med)</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="resMed" allowsSorting>
-                          {({ sortDirection }) => (<>Resistance (med)<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="resMed" sortDescriptor={rtSortDescriptor} onSortChange={onRtSortChange}>Resistance (med)</SortableHeader>
                         </Table.Column>
                       </Table.Header>
                       <Table.Body items={sortedRockTypes}>

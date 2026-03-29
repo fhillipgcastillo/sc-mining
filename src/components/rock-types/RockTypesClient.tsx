@@ -8,7 +8,6 @@ import { formatOreName } from "@/lib/constants";
 import { formatNumber, formatProbability, formatPercent } from "@/lib/formatting";
 import { useSort } from "@/hooks/useSort";
 import { OreChip } from "@/components/shared/OreChip";
-import { SortIndicator } from "@/components/shared/SortIndicator";
 import { SortableHeader } from "@/components/shared/SortableHeader";
 
 interface RockTypesClientProps {
@@ -160,13 +159,13 @@ function RockTypeSystemTable({ rows }: { rows: RockTypeSystemRow[] }) {
         aria-label="Rock type columns"
         className="grid grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr_1fr_1fr] gap-2 rounded-t-lg bg-surface px-4 py-2 text-xs font-semibold uppercase tracking-wider text-muted"
       >
-        <SortableHeader columnId="rockType" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Rock Type</SortableHeader>
-        <SortableHeader columnId="scans" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Scans</SortableHeader>
-        <SortableHeader columnId="users" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Users</SortableHeader>
-        <SortableHeader columnId="clusters" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Clusters</SortableHeader>
-        <SortableHeader columnId="massMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Mass (med)</SortableHeader>
-        <SortableHeader columnId="instMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Instability (med)</SortableHeader>
-        <SortableHeader columnId="resMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Resistance (med)</SortableHeader>
+        <span role="columnheader"><SortableHeader columnId="rockType" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Rock Type</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="scans" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Scans</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="users" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Users</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="clusters" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Clusters</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="massMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Mass (med)</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="instMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Instability (med)</SortableHeader></span>
+        <span role="columnheader"><SortableHeader columnId="resMed" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Resistance (med)</SortableHeader></span>
         <span role="columnheader">Ores</span>
       </div>
 
@@ -262,15 +261,20 @@ function OreSubTable({ ores, rockType }: OreSubTableProps) {
     [ores]
   );
 
-  const { sortedData: sortedOres, sortDescriptor, onSortChange } = useSort({
-    data: oreRows,
-    columns: {
+  const oreSortColumns = useMemo(
+    () => ({
       name: "name" as const,
       prob: "prob" as const,
       minPct: "minPct" as const,
       medPct: "medPct" as const,
       maxPct: "maxPct" as const,
-    },
+    }),
+    []
+  );
+
+  const { sortedData: sortedOres, sortDescriptor, onSortChange } = useSort({
+    data: oreRows,
+    columns: oreSortColumns,
     defaultSort: { column: "prob", direction: "descending" },
   });
 
@@ -284,25 +288,22 @@ function OreSubTable({ ores, rockType }: OreSubTableProps) {
           aria-label={`Ore composition for ${formatOreName(rockType)}`}
           className="text-sm"
         >
-          <Table.Content
-            sortDescriptor={sortDescriptor}
-            onSortChange={onSortChange}
-          >
+          <Table.Content>
             <Table.Header>
-              <Table.Column id="name" isRowHeader allowsSorting>
-                {({ sortDirection }) => (<>Ore<SortIndicator direction={sortDirection} /></>)}
+              <Table.Column isRowHeader>
+                <SortableHeader columnId="name" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Ore</SortableHeader>
               </Table.Column>
-              <Table.Column id="prob" allowsSorting>
-                {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+              <Table.Column>
+                <SortableHeader columnId="prob" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Probability</SortableHeader>
               </Table.Column>
-              <Table.Column id="minPct" allowsSorting>
-                {({ sortDirection }) => (<>Min %<SortIndicator direction={sortDirection} /></>)}
+              <Table.Column>
+                <SortableHeader columnId="minPct" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Min %</SortableHeader>
               </Table.Column>
-              <Table.Column id="medPct" allowsSorting>
-                {({ sortDirection }) => (<>Median %<SortIndicator direction={sortDirection} /></>)}
+              <Table.Column>
+                <SortableHeader columnId="medPct" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Median %</SortableHeader>
               </Table.Column>
-              <Table.Column id="maxPct" allowsSorting>
-                {({ sortDirection }) => (<>Max %<SortIndicator direction={sortDirection} /></>)}
+              <Table.Column>
+                <SortableHeader columnId="maxPct" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Max %</SortableHeader>
               </Table.Column>
             </Table.Header>
             <Table.Body items={sortedOres}>

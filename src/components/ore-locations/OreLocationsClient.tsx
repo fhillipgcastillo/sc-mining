@@ -15,7 +15,7 @@ import { formatProbability, formatPercent, formatNumber } from "@/lib/formatting
 import { useSort } from "@/hooks/useSort";
 import type { SortAccessorMap } from "@/hooks/useSort";
 import { OreChip } from "@/components/shared/OreChip";
-import { SortIndicator } from "@/components/shared/SortIndicator";
+import { SortableHeader } from "@/components/shared/SortableHeader";
 import { StatsCard } from "@/components/shared/StatsCard";
 import { ItemCard } from "@/components/shared/ItemCard";
 import { LocationCard } from "@/components/shared/LocationCard";
@@ -232,31 +232,28 @@ function FindOreTab({
                 <Table
                   aria-label={`Locations for ${formatOreName(selectedOre)}`}
                 >
-                  <Table.Content
-                    sortDescriptor={sortDescriptor}
-                    onSortChange={onSortChange}
-                  >
+                  <Table.Content>
                     <Table.Header>
-                      <Table.Column id="location" isRowHeader allowsSorting>
-                        {({ sortDirection }) => (<>Location<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column isRowHeader>
+                        <SortableHeader columnId="location" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Location</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="prob" allowsSorting>
-                        {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="prob" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Probability</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="minPct" allowsSorting>
-                        {({ sortDirection }) => (<>Min %<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="minPct" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Min %</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="medPct" allowsSorting>
-                        {({ sortDirection }) => (<>Median %<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="medPct" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Median %</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="maxPct" allowsSorting>
-                        {({ sortDirection }) => (<>Max %<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="maxPct" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Max %</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="scans" allowsSorting>
-                        {({ sortDirection }) => (<>Scans<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="scans" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Scans</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="users" allowsSorting>
-                        {({ sortDirection }) => (<>Users<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="users" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Users</SortableHeader>
                       </Table.Column>
                     </Table.Header>
                     <Table.Body items={sortedData}>
@@ -339,15 +336,20 @@ function BrowseLocationsTab({
     }));
   }, [location]);
 
-  const { sortedData: sortedOres, sortDescriptor: oreSortDescriptor, onSortChange: onOreSortChange } = useSort({
-    data: oreRows,
-    columns: {
+  const oreSortColumns = useMemo(
+    () => ({
       name: "name" as const,
       prob: "prob" as const,
       minPct: "minPct" as const,
       medPct: "medPct" as const,
       maxPct: "maxPct" as const,
-    },
+    }),
+    []
+  );
+
+  const { sortedData: sortedOres, sortDescriptor: oreSortDescriptor, onSortChange: onOreSortChange } = useSort({
+    data: oreRows,
+    columns: oreSortColumns,
     defaultSort: { column: "prob", direction: "descending" },
   });
 
@@ -457,25 +459,22 @@ function BrowseLocationsTab({
                   <Table
                     aria-label={`Ores at ${formatLocationName(selectedLocation)}`}
                   >
-                    <Table.Content
-                      sortDescriptor={oreSortDescriptor}
-                      onSortChange={onOreSortChange}
-                    >
+                    <Table.Content>
                       <Table.Header>
-                        <Table.Column id="name" isRowHeader allowsSorting>
-                          {({ sortDirection }) => (<>Ore<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column isRowHeader>
+                          <SortableHeader columnId="name" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Ore</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="prob" allowsSorting>
-                          {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="prob" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Probability</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="minPct" allowsSorting>
-                          {({ sortDirection }) => (<>Min %<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="minPct" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Min %</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="medPct" allowsSorting>
-                          {({ sortDirection }) => (<>Median %<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="medPct" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Median %</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="maxPct" allowsSorting>
-                          {({ sortDirection }) => (<>Max %<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="maxPct" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Max %</SortableHeader>
                         </Table.Column>
                       </Table.Header>
                       <Table.Body items={sortedOres}>

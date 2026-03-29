@@ -15,7 +15,7 @@ import { formatNumber, formatProbability } from "@/lib/formatting";
 import { useSort } from "@/hooks/useSort";
 import type { SortAccessorMap } from "@/hooks/useSort";
 import { OreChip } from "@/components/shared/OreChip";
-import { SortIndicator } from "@/components/shared/SortIndicator";
+import { SortableHeader } from "@/components/shared/SortableHeader";
 import { ItemCard } from "@/components/shared/ItemCard";
 import { LocationCard } from "@/components/shared/LocationCard";
 
@@ -231,31 +231,28 @@ function FindOreTab({
                 <Table
                   aria-label={`Locations for ${formatOreName(selectedOre)}`}
                 >
-                  <Table.Content
-                    sortDescriptor={sortDescriptor}
-                    onSortChange={onSortChange}
-                  >
+                  <Table.Content>
                     <Table.Header>
-                      <Table.Column id="location" isRowHeader allowsSorting>
-                        {({ sortDirection }) => (<>Location<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column isRowHeader>
+                        <SortableHeader columnId="location" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Location</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="prob" allowsSorting>
-                        {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="prob" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Probability</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="finds" allowsSorting>
-                        {({ sortDirection }) => (<>Finds<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="finds" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Finds</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="minRocks" allowsSorting>
-                        {({ sortDirection }) => (<>Min Rocks<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="minRocks" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Min Rocks</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="medianRocks" allowsSorting>
-                        {({ sortDirection }) => (<>Median Rocks<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="medianRocks" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Median Rocks</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="maxRocks" allowsSorting>
-                        {({ sortDirection }) => (<>Max Rocks<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="maxRocks" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Max Rocks</SortableHeader>
                       </Table.Column>
-                      <Table.Column id="users" allowsSorting>
-                        {({ sortDirection }) => (<>Users<SortIndicator direction={sortDirection} /></>)}
+                      <Table.Column>
+                        <SortableHeader columnId="users" sortDescriptor={sortDescriptor} onSortChange={onSortChange}>Users</SortableHeader>
                       </Table.Column>
                     </Table.Header>
                     <Table.Body items={sortedData}>
@@ -335,16 +332,21 @@ function BrowseLocationsTab({
     }));
   }, [location]);
 
-  const { sortedData: sortedOres, sortDescriptor: oreSortDescriptor, onSortChange: onOreSortChange } = useSort({
-    data: oreRows,
-    columns: {
+  const oreSortColumns = useMemo(
+    () => ({
       name: "name" as const,
       prob: "prob" as const,
       finds: "finds" as const,
       minRocks: "minRocks" as const,
       medianRocks: "medianRocks" as const,
       maxRocks: "maxRocks" as const,
-    },
+    }),
+    []
+  );
+
+  const { sortedData: sortedOres, sortDescriptor: oreSortDescriptor, onSortChange: onOreSortChange } = useSort({
+    data: oreRows,
+    columns: oreSortColumns,
     defaultSort: { column: "prob", direction: "descending" },
   });
 
@@ -438,28 +440,25 @@ function BrowseLocationsTab({
                   <Table
                     aria-label={`Hand-mining ores at ${formatLocationName(selectedLocation)}`}
                   >
-                    <Table.Content
-                      sortDescriptor={oreSortDescriptor}
-                      onSortChange={onOreSortChange}
-                    >
+                    <Table.Content>
                       <Table.Header>
-                        <Table.Column id="name" isRowHeader allowsSorting>
-                          {({ sortDirection }) => (<>Ore<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column isRowHeader>
+                          <SortableHeader columnId="name" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Ore</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="prob" allowsSorting>
-                          {({ sortDirection }) => (<>Probability<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="prob" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Probability</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="finds" allowsSorting>
-                          {({ sortDirection }) => (<>Finds<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="finds" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Finds</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="minRocks" allowsSorting>
-                          {({ sortDirection }) => (<>Min Rocks<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="minRocks" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Min Rocks</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="medianRocks" allowsSorting>
-                          {({ sortDirection }) => (<>Median Rocks<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="medianRocks" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Median Rocks</SortableHeader>
                         </Table.Column>
-                        <Table.Column id="maxRocks" allowsSorting>
-                          {({ sortDirection }) => (<>Max Rocks<SortIndicator direction={sortDirection} /></>)}
+                        <Table.Column>
+                          <SortableHeader columnId="maxRocks" sortDescriptor={oreSortDescriptor} onSortChange={onOreSortChange}>Max Rocks</SortableHeader>
                         </Table.Column>
                       </Table.Header>
                       <Table.Body items={sortedOres}>
